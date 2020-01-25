@@ -74,8 +74,4 @@ public class RaidMember : MonoBehaviour
             boss.health -= damage;
         }
     }
-
-
-    
-
 }

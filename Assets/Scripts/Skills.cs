@@ -93,7 +93,7 @@ public class Skills : MonoBehaviour
     }
     public void DivineHymn()
     {
-        // leczy wszystkich 5x wciagu 8s
+        // leczy wszystkich 5x wciagu 8s (co 1.6s)
         costMana = 4.4f;
         castTime = 8f;
         globalCD = 1.5f;

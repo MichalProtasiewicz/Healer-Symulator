@@ -11,11 +11,10 @@ public class Player : MonoBehaviour
     public ManaSystem mana;
 
     public float spellPower;
-    //public Skills spellSellected;
 
     private float globalCooldown = 1.5f;
     public float timeNextSpell = 0.0f;
-    private bool isCasting = false;
+    public bool isCasting = false;
 
     public HealthBar castbar;
     public Text castText;
@@ -27,7 +26,6 @@ public class Player : MonoBehaviour
 
     public Spells[] spellBook;
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +62,7 @@ public class Player : MonoBehaviour
                     targetSpell = focus;
 
                     spellRoutine = StartCoroutine(UpdateCast());
-                    isCasting = false;
+                    
 
                 }
                 else
@@ -87,6 +85,11 @@ public class Player : MonoBehaviour
 
     public IEnumerator UpdateCast()
     {
+
+        //DivineHym prowizorka
+        if (spellSellected.cooldown > 150)
+            spellSellected.CastSpell();
+
         if(spellSellected.castTime > 0)
         {
             float timePassed = Time.deltaTime;
@@ -115,8 +118,11 @@ public class Player : MonoBehaviour
                 yield return null;
             }
         }
-        
-        spellSellected.CastSpell();
+
+        //DivineHym prowizorka
+        if (spellSellected.cooldown < 150)
+            spellSellected.CastSpell();
+
 
         if (targetSpell.health > targetSpell.maxHealth)
             targetSpell.health = targetSpell.maxHealth;
@@ -127,6 +133,8 @@ public class Player : MonoBehaviour
         castText.text = "";
         castbar.fillAmount = 0;
         castbar.UpdateBar();
+
+        isCasting = false;
 
         yield return null;
     }
@@ -140,6 +148,7 @@ public class Player : MonoBehaviour
             castText.text = "";
             castbar.fillAmount = 0;
             castbar.UpdateBar();
+            isCasting = false;
         }
     }
 

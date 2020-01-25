@@ -11966,7 +11966,7 @@ MonoBehaviour:
   castTime: 8
   cooldown: 180
   healPower: 0.45
-  durationEffect: 0
+  durationEffect: 1.6
   timeNextSpell: 0
   player: {fileID: 1772701227}
   spellImage: {fileID: 1361508945}
@@ -14684,6 +14684,7 @@ MonoBehaviour:
   mana: {fileID: 243054539}
   spellPower: 10
   timeNextSpell: 0
+  isCasting: 0
   castbar: {fileID: 146788713}
   castText: {fileID: 1326861485}
   spellSellected: {fileID: 0}

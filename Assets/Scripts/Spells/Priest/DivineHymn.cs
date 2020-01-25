@@ -6,6 +6,8 @@ public class DivineHymn : Spells
 {
     public RaidController raidController;
 
+    private Coroutine divineHymnCoroutine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,29 +17,48 @@ public class DivineHymn : Spells
     // Update is called once per frame
     void Update()
     {
-        
+        if(player.spellSellected != this && divineHymnCoroutine != null)
+        {
+            StopCoroutine(divineHymnCoroutine);
+        }
     }
 
     public override void CastSpell()
     {
         if (player.targetSpell != null && player.targetSpell.isAlive && Time.time > timeNextSpell)
         {
-            for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
+            divineHymnCoroutine = StartCoroutine(DivineHymnCo());
+
+            StartCoroutine(CdVisualize(cooldown));
+        }
+    }
+
+    public IEnumerator DivineHymnCo()
+    {
+        int healCdTimer = 0;
+
+        for (int x = 0; x < castTime; x++)
+        {
+            if (healCdTimer == 0)
             {
-                for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
+                healCdTimer = 2;
+
+                for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
                 {
-                    if (raidController.allRaid[i,j].isAlive)
+                    for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
                     {
-                        raidController.allRaid[i,j].health = raidController.allRaid[i,j].health + (player.spellPower * player.spellSellected.healPower);
+                        if (raidController.allRaid[i, j].isAlive)
+                        {
+                            raidController.allRaid[i, j].health = raidController.allRaid[i, j].health + (player.spellPower * player.spellSellected.healPower);
+                        }
                     }
                 }
             }
-            
-            timeNextSpell = Time.time + cooldown;
-    
-            StartCoroutine(CdVisualize(cooldown));
-
+            healCdTimer--;
+            yield return new WaitForSeconds(1); 
         }
+
+        timeNextSpell = Time.time + cooldown;
     }
 
 }
