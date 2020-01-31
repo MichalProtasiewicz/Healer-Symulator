@@ -24,6 +24,7 @@ public class Boss : MonoBehaviour
     public Debuff debuff;
     private float timeNextDebuff;
 
+    public GameObject victoryScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,7 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isAlive)
+        if (isAlive && !raidController.allDead)
         {
             CheckDeath();
             UpdateHealthBar();
@@ -60,6 +61,7 @@ public class Boss : MonoBehaviour
             health = 0;
             isAlive = false;
             healthText.text = "Dead";
+            victoryScreen.SetActive(true);
         }
     }
 
