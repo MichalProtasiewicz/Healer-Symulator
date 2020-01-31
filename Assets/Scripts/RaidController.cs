@@ -15,6 +15,9 @@ public class RaidController : MonoBehaviour
     // dodac podzial na hilera dpsa i tanka, gracz bedzie jednym z healerow - jak zginie nie moze hilac, 
     // ale istnieje mozliwosc że ktoś go wskrzesi lub otrzyma aniolka z talentow a z przedmiotem legendarnym po skonczeniu aniolka wskrzesi sie.
 
+
+    public GameObject gameOverScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,27 @@ public class RaidController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CheckAllRaidDeath();
+    }
+
+    public void CheckAllRaidDeath()
+    {
+        bool tmp=false;
+
+        for (int i = 0; i < groupsCount; i++)
+        {
+            for (int j = 0; j < playersCount; j++)
+            {
+                if (allRaid[i, j].isAlive)
+                {
+                    tmp = true;
+                    break;
+                }
+            }
+        }
+        if(!tmp)
+        {
+            gameOverScreen.SetActive(true);
+        }
     }
 }
