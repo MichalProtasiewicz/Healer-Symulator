@@ -6,6 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BossScene.unity
+    path: Assets/Scenes/MapScene.unity
+    guid: d53d9b4a2f1dbcd4489772efa7cbffca
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/BossScene.unity
     guid: c79484fb1f4c40b42b11969ae1569622
+  - enabled: 1
+    path: Assets/Scenes/GroupScene.unity
+    guid: cff76e87670ec1f428f3aee01a2491bb
+  - enabled: 1
+    path: Assets/Scenes/GuildScene.unity
+    guid: 9d4bbcbe8fc288c4985c73bb2697fa0d
+  - enabled: 1
+    path: Assets/Scenes/HeroScene.unity
+    guid: 604778887864328428c76936474e2ed4
+  - enabled: 1
+    path: Assets/Scenes/QuestsScene.unity
+    guid: 69f81c2586b611244b5ce943006c5f12
+  - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: 123072b0296edce49965c641cffabbcc
+  - enabled: 1
+    path: Assets/Scenes/TalentsScene.unity
+    guid: 589031822bf677244990f84b73ac73ae
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/copyBoss.unity
+    guid: 2d8e8a6c2b2770b40adc4f7b3cbbe5fb
   m_configObjects: {}

@@ -25,6 +25,9 @@ public class Boss : MonoBehaviour
     private float timeNextDebuff;
 
     public GameObject victoryScreen;
+    public string nameBossToUnlock;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +65,8 @@ public class Boss : MonoBehaviour
             isAlive = false;
             healthText.text = "Dead";
             victoryScreen.SetActive(true);
+
+            PlayerPrefs.SetFloat(nameBossToUnlock, 1);
         }
     }
 
