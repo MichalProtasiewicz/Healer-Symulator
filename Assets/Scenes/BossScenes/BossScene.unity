@@ -3863,7 +3863,7 @@ MonoBehaviour:
   attackSpeed: 1
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
-  nameBossToUnlock: Patchverek
+  bossName: Patchverek
 --- !u!4 &414345891
 Transform:
   m_ObjectHideFlags: 0

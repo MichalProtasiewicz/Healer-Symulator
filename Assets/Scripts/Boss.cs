@@ -25,7 +25,7 @@ public class Boss : MonoBehaviour
     private float timeNextDebuff;
 
     public GameObject victoryScreen;
-    public string nameBossToUnlock;
+    public string bossName;
 
 
 
@@ -66,7 +66,7 @@ public class Boss : MonoBehaviour
             healthText.text = "Dead";
             victoryScreen.SetActive(true);
 
-            PlayerPrefs.SetFloat(nameBossToUnlock, 1);
+            PlayerPrefs.SetFloat(bossName, 1);
         }
     }
 

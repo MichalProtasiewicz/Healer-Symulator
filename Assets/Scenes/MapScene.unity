@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  bossName: Patchverek
+  nameNeededToUnlock: Patchverek
   bossIndicator: {fileID: 1234955276}
 --- !u!114 &1234955281
 MonoBehaviour:
