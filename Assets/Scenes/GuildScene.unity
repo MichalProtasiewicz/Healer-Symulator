@@ -484,7 +484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19561929, y: 0.4733096}
   m_AnchorMax: {x: 0.19561929, y: 0.4733096}
-  m_AnchoredPosition: {x: 1.1000004, y: 3}
+  m_AnchoredPosition: {x: 1.0999985, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161209016
@@ -3471,7 +3471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17569092, y: 0.79200006}
   m_AnchorMax: {x: 0.17569092, y: 0.79200006}
-  m_AnchoredPosition: {x: -6.6, y: -6.1}
+  m_AnchoredPosition: {x: -6.600006, y: -6.0999985}
   m_SizeDelta: {x: 121.37, y: 86.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1167201826
@@ -4564,6 +4564,44 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1444846423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1444846425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6315026759088106853, guid: 50939f80a95f01d4c831c93237568a04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1444846423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444846426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6315026760658492063, guid: 50939f80a95f01d4c831c93237568a04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1444846423}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1444846427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6315026760574167655, guid: 50939f80a95f01d4c831c93237568a04,
+    type: 3}
+  m_PrefabInstance: {fileID: 1444846423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444846428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444846427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee48b3ac155389549ad65c5c92daddf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1444846426}
+  text: {fileID: 1444846425}
 --- !u!1 &1446418473
 GameObject:
   m_ObjectHideFlags: 0

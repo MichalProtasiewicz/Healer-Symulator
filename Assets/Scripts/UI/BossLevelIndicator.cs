@@ -8,8 +8,7 @@ public class BossLevelIndicator : MonoBehaviour
     public string nameNeededToUnlock;
     public GameObject bossIndicator;
 
-
-    void Start()
+    void Awake()
     {
         if(PlayerPrefs.GetFloat(nameNeededToUnlock) == 1 || nameNeededToUnlock == "")
         {
@@ -31,10 +30,5 @@ public class BossLevelIndicator : MonoBehaviour
             indicatorImage.color = new Color32(255, 0, 0, 255);
 
 
-    }
-
-    void Update()
-    {
-        
     }
 }
