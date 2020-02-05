@@ -28,6 +28,9 @@ public class RaidMember : MonoBehaviour
     public GameObject debuffIndicator;
     public Coroutine debuffCoroutine;
 
+    public GameObject pomIndicator;
+    public Text pomStacksText;
+
 
     // Start is called before the first frame update
     void Start()

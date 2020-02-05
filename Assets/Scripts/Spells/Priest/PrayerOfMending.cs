@@ -8,17 +8,7 @@ public class PrayerOfMending : Spells
     public HolyWordSanctify holyWordSa;
     public HolyWordSerenity holyWordSe;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float stacks;
 
     public override void CastSpell()
     {
