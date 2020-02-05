@@ -51,6 +51,7 @@ public class RaidMember : MonoBehaviour
                 health = 0;
                 debuffIndicator.SetActive(false);
                 renewIndicator.SetActive(false);
+                pomIndicator.SetActive(false);
                 isAlive = false;
             }
             if (health > maxHealth)
