@@ -193,13 +193,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1462862060}
   healthText: {fileID: 1120928928}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1479204127}
   pomIndicator: {fileID: 2113970347}
   pomStacksText: {fileID: 65605754}
+  role: 2
+  roleIndicator: {fileID: 2033252313}
+  raidController: {fileID: 0}
 --- !u!65 &7707523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -526,13 +530,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 381908240}
   healthText: {fileID: 2068053107}
   isAlive: 0
-  damage: 0.3
+  power: 0.5
   attackSpeed: 0.5
+  attackCooldown: 4
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1953006488}
   pomIndicator: {fileID: 253325439}
   pomStacksText: {fileID: 762370996}
+  role: 1
+  roleIndicator: {fileID: 703543578}
+  raidController: {fileID: 0}
 --- !u!65 &47285088
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -919,13 +927,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 153761620}
   healthText: {fileID: 725347860}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1813200075}
   pomIndicator: {fileID: 576478488}
   pomStacksText: {fileID: 989712100}
+  role: 2
+  roleIndicator: {fileID: 616767117}
+  raidController: {fileID: 0}
 --- !u!65 &77281013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3150,7 +3162,7 @@ MonoBehaviour:
   manaText: {fileID: 548299841}
   maxPlayerMana: 100
   playerMana: 0
-  regenMana: 0.25
+  regenMana: 0.5
 --- !u!4 &243054540
 Transform:
   m_ObjectHideFlags: 0
@@ -3827,13 +3839,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 257276114}
   healthText: {fileID: 1153032537}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 577200080}
   pomIndicator: {fileID: 1201544880}
   pomStacksText: {fileID: 331857025}
+  role: 2
+  roleIndicator: {fileID: 1487631128}
+  raidController: {fileID: 0}
 --- !u!65 &316837271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4676,6 +4692,7 @@ MonoBehaviour:
   raidController: {fileID: 936469729}
   damage: 1
   attackSpeed: 1
+  attackCooldown: 3
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
   bossName: Patchverek
@@ -7738,13 +7755,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 876524030}
   healthText: {fileID: 358241102}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 176233777}
   pomIndicator: {fileID: 2065836878}
   pomStacksText: {fileID: 1811902054}
+  role: 2
+  roleIndicator: {fileID: 1585319224}
+  raidController: {fileID: 0}
 --- !u!65 &667532560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9195,13 +9216,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1289074538}
   healthText: {fileID: 1189261371}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 29096326}
   pomIndicator: {fileID: 1944013823}
   pomStacksText: {fileID: 1808663901}
+  role: 2
+  roleIndicator: {fileID: 467255956}
+  raidController: {fileID: 0}
 --- !u!65 &768433617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9288,13 +9313,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 230147736}
   healthText: {fileID: 1790193200}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1349595428}
   pomIndicator: {fileID: 1783454457}
   pomStacksText: {fileID: 1926026141}
+  role: 2
+  roleIndicator: {fileID: 986543874}
+  raidController: {fileID: 0}
 --- !u!65 &775911461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10283,13 +10312,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1362129209}
   healthText: {fileID: 1917986087}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 115610104}
   pomIndicator: {fileID: 552739039}
   pomStacksText: {fileID: 958402099}
+  role: 2
+  roleIndicator: {fileID: 1508066827}
+  raidController: {fileID: 0}
 --- !u!65 &887990706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10545,13 +10578,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 130158377}
   healthText: {fileID: 788292991}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 2074436823}
   pomIndicator: {fileID: 231824989}
   pomStacksText: {fileID: 250109732}
+  role: 2
+  roleIndicator: {fileID: 745053580}
+  raidController: {fileID: 0}
 --- !u!65 &906840939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10828,6 +10865,9 @@ MonoBehaviour:
   playersCount: 5
   allDead: 0
   gameOverScreen: {fileID: 1614840278}
+  spriteTank: {fileID: 21300000, guid: 0a2301f3538cada42b28eadd40e7cf73, type: 3}
+  spriteHeal: {fileID: 21300000, guid: 5b675bdc82f2330449aaf87194171f5d, type: 3}
+  spriteDps: {fileID: 21300000, guid: e49f0fe88025ab94c9c6b57781935212, type: 3}
 --- !u!1 &938818126
 GameObject:
   m_ObjectHideFlags: 0
@@ -12300,19 +12340,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 200
   healthBar: {fileID: 1033984758}
   borderIndicator: {fileID: 425191929}
   renewIndicator: {fileID: 1886322555}
   healthText: {fileID: 2080108278}
   isAlive: 0
-  damage: 0.3
+  power: 0.1
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 821634405}
   pomIndicator: {fileID: 1048939315}
   pomStacksText: {fileID: 90803908}
+  role: 0
+  roleIndicator: {fileID: 554596271}
+  raidController: {fileID: 0}
 --- !u!65 &1033984760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12399,13 +12443,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 551166947}
   healthText: {fileID: 575585550}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 460438351}
   pomIndicator: {fileID: 1495429282}
   pomStacksText: {fileID: 428040474}
+  role: 2
+  roleIndicator: {fileID: 2004433374}
+  raidController: {fileID: 0}
 --- !u!65 &1035051579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12492,13 +12540,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1879906603}
   healthText: {fileID: 1532856277}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1752532897}
   pomIndicator: {fileID: 162449744}
   pomStacksText: {fileID: 1497926511}
+  role: 2
+  roleIndicator: {fileID: 236513423}
+  raidController: {fileID: 0}
 --- !u!65 &1038439350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14080,13 +14132,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1630046036}
   healthText: {fileID: 661403788}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 228967179}
   pomIndicator: {fileID: 1103309428}
   pomStacksText: {fileID: 959792535}
+  role: 2
+  roleIndicator: {fileID: 2105606717}
+  raidController: {fileID: 0}
 --- !u!65 &1198843440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14310,19 +14366,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  maxHealth: 100
+  maxHealth: 200
   healthBar: {fileID: 1230748781}
   borderIndicator: {fileID: 51822999}
   renewIndicator: {fileID: 357728544}
   healthText: {fileID: 1871776556}
   isAlive: 0
-  damage: 0.3
+  power: 0.1
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 300461128}
   pomIndicator: {fileID: 586231641}
   pomStacksText: {fileID: 1919722151}
+  role: 0
+  roleIndicator: {fileID: 1268615165}
+  raidController: {fileID: 0}
 --- !u!65 &1230748783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14409,13 +14469,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 967737789}
   healthText: {fileID: 2069738802}
   isAlive: 0
-  damage: 0.3
+  power: 0.5
   attackSpeed: 0.5
+  attackCooldown: 4
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 601144283}
   pomIndicator: {fileID: 1874736940}
   pomStacksText: {fileID: 1291582779}
+  role: 1
+  roleIndicator: {fileID: 381500308}
+  raidController: {fileID: 0}
 --- !u!65 &1244490789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14502,13 +14566,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 2111845275}
   healthText: {fileID: 160310913}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1271255979}
   pomIndicator: {fileID: 1751051355}
   pomStacksText: {fileID: 1688200950}
+  role: 2
+  roleIndicator: {fileID: 261561283}
+  raidController: {fileID: 0}
 --- !u!65 &1262185208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15475,13 +15543,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 173491725}
   healthText: {fileID: 1499473281}
   isAlive: 0
-  damage: 0.3
+  power: 0.5
   attackSpeed: 0.5
+  attackCooldown: 4
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1081709105}
   pomIndicator: {fileID: 1410495428}
   pomStacksText: {fileID: 802218417}
+  role: 1
+  roleIndicator: {fileID: 692019386}
+  raidController: {fileID: 0}
 --- !u!65 &1341542789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19529,13 +19601,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 399040662}
   healthText: {fileID: 170445797}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1400113893}
   pomIndicator: {fileID: 994171989}
   pomStacksText: {fileID: 522756482}
+  role: 2
+  roleIndicator: {fileID: 1400445572}
+  raidController: {fileID: 0}
 --- !u!65 &1782143164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20583,7 +20659,7 @@ MonoBehaviour:
   durationEffect: 15
   timeBetweenTick: 3
   healthDecrease: 20
-  cooldown: 5
+  cooldown: 10
   raidController: {fileID: 936469729}
 --- !u!1 &1822844254
 GameObject:
@@ -20658,13 +20734,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1417831177}
   healthText: {fileID: 1270266128}
   isAlive: 0
-  damage: 0.3
+  power: 0.4
   attackSpeed: 0.5
+  attackCooldown: 2
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 1890259883}
   pomIndicator: {fileID: 746998059}
   pomStacksText: {fileID: 735153212}
+  role: 2
+  roleIndicator: {fileID: 963271456}
+  raidController: {fileID: 0}
 --- !u!65 &1822844258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20751,13 +20831,17 @@ MonoBehaviour:
   renewIndicator: {fileID: 1632414551}
   healthText: {fileID: 968505149}
   isAlive: 0
-  damage: 0.3
+  power: 0.5
   attackSpeed: 0.5
+  attackCooldown: 4
   boss: {fileID: 414345890}
   debuffIsActive: 0
   debuffIndicator: {fileID: 435295499}
   pomIndicator: {fileID: 801531200}
   pomStacksText: {fileID: 1320638120}
+  role: 1
+  roleIndicator: {fileID: 108325529}
+  raidController: {fileID: 0}
 --- !u!65 &1832810902
 BoxCollider:
   m_ObjectHideFlags: 0

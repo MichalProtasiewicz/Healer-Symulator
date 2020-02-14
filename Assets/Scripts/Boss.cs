@@ -18,7 +18,7 @@ public class Boss : MonoBehaviour
 
     public float damage;
     public float attackSpeed;
-    private float attackCooldown = 2;
+    public float attackCooldown;
     private float timeNextAttack;
 
     public Debuff debuff;

@@ -13,10 +13,16 @@ public class RaidController : MonoBehaviour
     public int playersCount = 5;
 
     // dodac podzial na hilera dpsa i tanka, gracz bedzie jednym z healerow - jak zginie nie moze hilac, 
-    // ale istnieje mozliwosc że ktoś go wskrzesi lub otrzyma aniolka z talentow a z przedmiotem legendarnym po skonczeniu aniolka wskrzesi sie.
+    // ale istnieje mozliwosc że ktoś go wskrzesi lub otrzyma aniolka z talentow 
 
     public bool allDead;
     public GameObject gameOverScreen;
+
+    public Sprite spriteTank;
+    public Sprite spriteHeal;
+    public Sprite spriteDps;
+
+    public enum Role { tank, healer, dps };
 
     // Start is called before the first frame update
     void Start()

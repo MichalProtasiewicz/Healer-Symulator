@@ -17,9 +17,9 @@ public class RaidMember : MonoBehaviour
 
     public bool isAlive;
 
-    public float damage;
+    public float power;
     public float attackSpeed;
-    private float attackCooldown = 2;
+    public float attackCooldown;
     private float timeNextAttack;
 
     public Boss boss;
@@ -31,6 +31,10 @@ public class RaidMember : MonoBehaviour
     public GameObject pomIndicator;
     public Text pomStacksText;
 
+    public RaidController.Role role;
+    public GameObject roleIndicator;
+    public RaidController raidController;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +42,21 @@ public class RaidMember : MonoBehaviour
         isAlive = true;
         health = maxHealth;
         UpdateRaidBar();
-        
+
+        raidController = FindObjectOfType<RaidController>();
+
+        switch (role)
+        {
+            case RaidController.Role.tank:
+                roleIndicator.GetComponent<SpriteRenderer>().sprite = raidController.spriteTank;
+                return;
+            case RaidController.Role.healer:
+                roleIndicator.GetComponent<SpriteRenderer>().sprite = raidController.spriteHeal;
+                return;
+            case RaidController.Role.dps:
+                roleIndicator.GetComponent<SpriteRenderer>().sprite = raidController.spriteDps;
+                return;
+        }
     }
 
     // Update is called once per frame
@@ -58,7 +76,10 @@ public class RaidMember : MonoBehaviour
                 health = maxHealth;
 
             UpdateRaidBar();
-            DealDamage();
+            if(role == RaidController.Role.healer)
+                HealAlly();
+            else
+                DealDamage();
         }
     }
 
@@ -75,7 +96,24 @@ public class RaidMember : MonoBehaviour
         if (Time.time > timeNextAttack && boss.isAlive)
         {
             timeNextAttack = Time.time + (attackCooldown - attackSpeed);
-            boss.health -= damage;
+            boss.health -= power;
+        }
+    }
+
+    public void HealAlly()
+    {
+        if (Time.time > timeNextAttack && boss.isAlive)
+        {
+            timeNextAttack = Time.time + (attackCooldown - attackSpeed);
+
+            int randomGroup = Random.Range(0, 4);
+            for(int i = 0; i < raidController.playersCount; i++)
+            {
+                if(raidController.allRaid[randomGroup, i].isAlive)
+                {
+                    raidController.allRaid[randomGroup, i].health = raidController.allRaid[randomGroup, i].health + power;
+                }
+            }
         }
     }
 }
