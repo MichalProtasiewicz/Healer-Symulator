@@ -14,6 +14,7 @@ public class BossInfoPanel : MonoBehaviour
     public Image iconDebuff2;
     public TextMeshProUGUI textDebuff2;
     public TextMeshProUGUI textTips;
+    public TextMeshProUGUI textTipsOffer;
 
     void Start()
     {
