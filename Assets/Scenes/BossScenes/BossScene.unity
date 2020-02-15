@@ -4690,11 +4690,10 @@ MonoBehaviour:
   isAlive: 0
   target: {fileID: 0}
   raidController: {fileID: 936469729}
-  damage: 1
-  attackSpeed: 1
+  damage: 15
   attackCooldown: 3
-  aoeDamage: 1
-  aoeAttackCooldown: 1
+  aoeDamage: 10
+  aoeAttackCooldown: 15
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
   bossName: Patchverek
