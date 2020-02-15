@@ -17,7 +17,6 @@ public class Boss : MonoBehaviour
     public RaidController raidController;
 
     public float damage;
-    public float attackSpeed;
     public float attackCooldown;
     private float timeNextAttack;
 
@@ -50,8 +49,11 @@ public class Boss : MonoBehaviour
             CheckDeath();
             UpdateHealthBar();
             DealDamage();
+            DealAoeDamage();
             CastDebuff();
         }
+        if (!target.isAlive)
+            FocusTarget();
     }
 
     public void UpdateHealthBar()
@@ -79,17 +81,12 @@ public class Boss : MonoBehaviour
     {
         if (Time.time > timeNextAttack )
         {
-            timeNextAttack = Time.time + (attackCooldown - attackSpeed);
-            for(int i = 0; i < raidController.allRaid.GetLength(0); i++)
-            {
-                for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
-                {
-                    if (raidController.allRaid[i, j].isAlive)
-                    {
-                        raidController.allRaid[i, j].health -= damage;
-                    }
-                }
-            }
+            timeNextAttack = Time.time + attackCooldown;
+
+            if(target.role == RaidController.Role.tank)
+                target.health -= damage;
+            else
+                target.health -= damage * 2;
         }
     }
 
@@ -122,8 +119,8 @@ public class Boss : MonoBehaviour
             
             do
             {
-                randomX = Random.Range(0, x );
-                randomY = Random.Range(0, y );      
+                randomX = Random.Range(0, x);
+                randomY = Random.Range(0, y);      
             } while (raidController.allRaid[randomX, randomY].isAlive == false);
             
             timeNextDebuff = Time.time + debuff.cooldown;
@@ -134,20 +131,33 @@ public class Boss : MonoBehaviour
 
     public void FocusTarget()
     {
+        int flag = 0;
+        int randomI = 0;
+        int randomJ = 0;
+
         for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
         {
             for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
             {
-                if (raidController.allRaid[i, j].isAlive )
+                if (raidController.allRaid[i, j].isAlive && raidController.allRaid[i, j].role == RaidController.Role.tank)
                 {
-                    if (raidController.allRaid[i, j].role == RaidController.Role.tank)
-                    {
-                        target = raidController.allRaid[i, j];
-                        break;
-                    }
-                    
+                    target = raidController.allRaid[i, j];
+                    flag = 1;
+                    break;
                 }
             }
+            if (flag == 1)
+                break;
+        }
+        if(flag == 0)
+        {
+            do
+            {
+                randomI = Random.Range(0, raidController.allRaid.GetLength(0));
+                randomJ = Random.Range(0, raidController.allRaid.GetLength(1));
+            } while (!raidController.allRaid[randomI, randomJ].isAlive);
+
+            target = raidController.allRaid[randomI, randomJ];
         }
     }
 
