@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class RaidController : MonoBehaviour
 {
-    public RaidMember mainTank;
-    public RaidMember offTank;
-
     public RaidMember[,] allRaid;
 
     public int groupsCount = 4;
@@ -25,7 +22,7 @@ public class RaidController : MonoBehaviour
     public enum Role { tank, healer, dps };
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         allDead = false;
         int tmp = 1;

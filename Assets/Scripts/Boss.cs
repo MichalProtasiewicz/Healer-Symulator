@@ -21,6 +21,10 @@ public class Boss : MonoBehaviour
     public float attackCooldown;
     private float timeNextAttack;
 
+    public float aoeDamage;
+    public float aoeAttackCooldown;
+    private float timeNextAoeAttack;
+
     public Debuff debuff;
     private float timeNextDebuff;
 
@@ -35,6 +39,7 @@ public class Boss : MonoBehaviour
         isAlive = true;
         health = maxHealth;
         UpdateHealthBar();
+        FocusTarget();
     }
 
     // Update is called once per frame
@@ -88,6 +93,24 @@ public class Boss : MonoBehaviour
         }
     }
 
+    public void DealAoeDamage()
+    {
+        if (Time.time > timeNextAoeAttack)
+        {
+            timeNextAoeAttack = Time.time + aoeAttackCooldown;
+            for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
+            {
+                for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
+                {
+                    if (raidController.allRaid[i, j].isAlive)
+                    {
+                        raidController.allRaid[i, j].health -= aoeDamage;
+                    }
+                }
+            }
+        }
+    }
+
     public void CastDebuff()
     {
         if (Time.time > timeNextDebuff)
@@ -96,7 +119,6 @@ public class Boss : MonoBehaviour
             int y = raidController.allRaid.GetLength(1);
             int randomX = 0;
             int randomY = 0;
-            RaidMember target;
             
             do
             {
@@ -110,6 +132,23 @@ public class Boss : MonoBehaviour
         }     
     }
 
-    
+    public void FocusTarget()
+    {
+        for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
+        {
+            for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
+            {
+                if (raidController.allRaid[i, j].isAlive )
+                {
+                    if (raidController.allRaid[i, j].role == RaidController.Role.tank)
+                    {
+                        target = raidController.allRaid[i, j];
+                        break;
+                    }
+                    
+                }
+            }
+        }
+    }
 
 }

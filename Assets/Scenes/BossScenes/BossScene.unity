@@ -4693,6 +4693,8 @@ MonoBehaviour:
   damage: 1
   attackSpeed: 1
   attackCooldown: 3
+  aoeDamage: 1
+  aoeAttackCooldown: 1
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
   bossName: Patchverek
@@ -10859,8 +10861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605a4aff17a22f84fb3d5b55600e6878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainTank: {fileID: 1230748782}
-  offTank: {fileID: 1033984759}
   groupsCount: 4
   playersCount: 5
   allDead: 0

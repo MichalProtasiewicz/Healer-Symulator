@@ -35,9 +35,7 @@ public class RaidMember : MonoBehaviour
     public GameObject roleIndicator;
     public RaidController raidController;
 
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         isAlive = true;
         health = maxHealth;
@@ -59,7 +57,6 @@ public class RaidMember : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isAlive)
