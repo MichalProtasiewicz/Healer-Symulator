@@ -4689,6 +4689,7 @@ MonoBehaviour:
   healthText: {fileID: 196131490}
   isAlive: 0
   target: {fileID: 0}
+  changeTargetCooldown: 20
   raidController: {fileID: 936469729}
   damage: 15
   attackCooldown: 3
@@ -8625,9 +8626,9 @@ RectTransform:
   m_Father: {fileID: 908106267}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -14.900024, y: -13.299988}
+  m_AnchorMin: {x: 0.96000004, y: 0.9824844}
+  m_AnchorMax: {x: 0.96000004, y: 0.9824844}
+  m_AnchoredPosition: {x: 1.0999756, y: 0.7000122}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739211484
