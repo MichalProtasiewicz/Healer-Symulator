@@ -14,6 +14,9 @@ public class Boss : MonoBehaviour
     public bool isAlive;
 
     public RaidMember target;
+    public float changeTargetCooldown;
+    private float timeToChangeTarget = -1;
+
     public RaidController raidController;
 
     public float damage;
@@ -51,9 +54,10 @@ public class Boss : MonoBehaviour
             DealDamage();
             DealAoeDamage();
             CastDebuff();
-        }
-        if (!target.isAlive)
+            if (!target.isAlive)
+                timeToChangeTarget = 0;
             FocusTarget();
+        }
     }
 
     public void UpdateHealthBar()
@@ -131,34 +135,42 @@ public class Boss : MonoBehaviour
 
     public void FocusTarget()
     {
-        int flag = 0;
-        int randomI = 0;
-        int randomJ = 0;
-
-        for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
+        if (Time.time > timeToChangeTarget)
         {
-            for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
+            int flag = 0;
+            int randomI = 0;
+            int randomJ = 0;
+
+            for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
             {
-                if (raidController.allRaid[i, j].isAlive && raidController.allRaid[i, j].role == RaidController.Role.tank)
+                for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
                 {
-                    target = raidController.allRaid[i, j];
-                    flag = 1;
-                    break;
+                    if ((raidController.allRaid[i, j].isAlive) && (raidController.allRaid[i, j].role == RaidController.Role.tank) && (raidController.allRaid[i, j] != target))
+                    {
+                        target = raidController.allRaid[i, j];
+                        flag = 1;
+                        break;
+                    }
                 }
+                if (flag == 1)
+                    break;
             }
-            if (flag == 1)
-                break;
-        }
-        if(flag == 0)
-        {
-            do
+            if (flag == 0)
             {
-                randomI = Random.Range(0, raidController.allRaid.GetLength(0));
-                randomJ = Random.Range(0, raidController.allRaid.GetLength(1));
-            } while (!raidController.allRaid[randomI, randomJ].isAlive);
+                do
+                {
+                    randomI = Random.Range(0, raidController.allRaid.GetLength(0));
+                    randomJ = Random.Range(0, raidController.allRaid.GetLength(1));
+                } while ((!raidController.allRaid[randomI, randomJ].isAlive) && (raidController.allRaid[randomI, randomJ] != target));
 
-            target = raidController.allRaid[randomI, randomJ];
+                target = raidController.allRaid[randomI, randomJ];
+            }
+
+            timeToChangeTarget = Time.time + changeTargetCooldown;
         }
+
+
+        
     }
 
 }
