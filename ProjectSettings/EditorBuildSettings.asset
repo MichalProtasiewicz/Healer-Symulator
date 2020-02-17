@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossScenes/copyBoss.unity
     guid: 2d8e8a6c2b2770b40adc4f7b3cbbe5fb
+  - enabled: 1
+    path: Assets/Scenes/SpellbookScene.unity
+    guid: 36ecd5a60f5479944bf2f41b51f917ac
   m_configObjects: {}
