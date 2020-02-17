@@ -2531,6 +2531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1902808775244670086, guid: a8fc7d26dfca29f4abe1403f6547c486,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1902808775244670087, guid: a8fc7d26dfca29f4abe1403f6547c486,
         type: 3}
       propertyPath: m_LocalPosition.x
