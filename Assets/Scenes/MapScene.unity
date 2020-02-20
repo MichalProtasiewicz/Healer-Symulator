@@ -1825,7 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!1 &1095392406 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5870644429830969762, guid: a8fc7d26dfca29f4abe1403f6547c486,
+  m_CorrespondingSourceObject: {fileID: 1095392406, guid: a8fc7d26dfca29f4abe1403f6547c486,
     type: 3}
   m_PrefabInstance: {fileID: 1902808774278363224}
   m_PrefabAsset: {fileID: 0}
@@ -2891,11 +2891,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 1902808775244670086, guid: a8fc7d26dfca29f4abe1403f6547c486,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1902808775244670087, guid: a8fc7d26dfca29f4abe1403f6547c486,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3011,8 +3006,7 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1078378727}
-    - target: {fileID: 6346677410296353171, guid: a8fc7d26dfca29f4abe1403f6547c486,
-        type: 3}
+    - target: {fileID: 1095392408, guid: a8fc7d26dfca29f4abe1403f6547c486, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1078378727}

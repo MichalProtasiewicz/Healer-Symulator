@@ -90,30 +90,14 @@ public class QuestInfoPanel : MonoBehaviour
 
     public void AcceptQuest(int questId)
     {
-        QuestInfo quest;
-        foreach (QuestInfo questInfo in QuestsInfo)
-        {
-            if (questInfo.questId == questId)
-            {
-                quest = questInfo;
-                break;
-            }
-        }
-        quest.isTook = true;
+        
+        CloseInfoPanel();
     }
 
     public void FinishQuest(int questId)
     {
-        QuestInfo quest;
-        foreach (QuestInfo questInfo in QuestsInfo)
-        {
-            if (questInfo.questId == questId)
-            {
-                quest = questInfo;
-                break;
-            }
-        }
-        quest.isDone = true;
+        
+        CloseInfoPanel();
     }
 
 }
