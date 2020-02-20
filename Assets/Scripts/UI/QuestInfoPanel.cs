@@ -9,6 +9,8 @@ public class QuestInfoPanel : MonoBehaviour
     public GameObject infoPanel;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI infoText;
+    public GameObject takeQuestButton;
+    public GameObject finishQuestButton;
 
     public struct QuestInfo
     {
@@ -41,14 +43,11 @@ public class QuestInfoPanel : MonoBehaviour
         QuestInfo defaultQuest2 = new QuestInfo(1, "Default Quest2", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             false, true);
         QuestInfo defaultQuest3 = new QuestInfo(2, "Default Quest3", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            true, false);
-        QuestInfo defaultQuest4 = new QuestInfo(3, "Default Quest4", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             true, true);
 
         QuestsInfo.Add(defaultQuest1);
         QuestsInfo.Add(defaultQuest2);
         QuestsInfo.Add(defaultQuest3);
-        QuestsInfo.Add(defaultQuest4);
     }
 
     public void OpenInfoPanel(int questId)
@@ -61,23 +60,24 @@ public class QuestInfoPanel : MonoBehaviour
                 nameText.text = questInfo.questName;
                 infoText.text = questInfo.questText;
 
-                //jesli quest zrobiony lub nie    
-                if (questInfo.isDone == false) //playerprefs?
-                {
-                    
-                }
-                else
-                {
-
-                }
                 //jesli quest wziety lub nie
                 if (questInfo.isTook == false)
                 {
-
+                    takeQuestButton.SetActive(true);
                 }
                 else
                 {
-
+                    takeQuestButton.SetActive(false);
+                }
+                //jesli quest wziety ale nie zrobiony    
+                if (questInfo.isDone == false && questInfo.isTook == true) //?
+                {
+                    finishQuestButton.SetActive(true);
+                }
+                //jesli quest zrobiony
+                else
+                {
+                    finishQuestButton.SetActive(false);
                 }
             }
         }
@@ -88,14 +88,32 @@ public class QuestInfoPanel : MonoBehaviour
         infoPanel.SetActive(false);
     }
 
-    public void AcceptQuest()
+    public void AcceptQuest(int questId)
     {
-
+        QuestInfo quest;
+        foreach (QuestInfo questInfo in QuestsInfo)
+        {
+            if (questInfo.questId == questId)
+            {
+                quest = questInfo;
+                break;
+            }
+        }
+        quest.isTook = true;
     }
 
-    public void FinishQuest()
+    public void FinishQuest(int questId)
     {
-
+        QuestInfo quest;
+        foreach (QuestInfo questInfo in QuestsInfo)
+        {
+            if (questInfo.questId == questId)
+            {
+                quest = questInfo;
+                break;
+            }
+        }
+        quest.isDone = true;
     }
 
 }
