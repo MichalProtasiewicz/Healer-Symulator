@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BossScenes/BossScene.unity
     guid: c79484fb1f4c40b42b11969ae1569622
   - enabled: 1
-    path: Assets/Scenes/GroupScene.unity
-    guid: cff76e87670ec1f428f3aee01a2491bb
-  - enabled: 1
     path: Assets/Scenes/GuildScene.unity
     guid: 9d4bbcbe8fc288c4985c73bb2697fa0d
   - enabled: 1
