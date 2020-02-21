@@ -13,6 +13,10 @@ public class TalentsInfoPanel : MonoBehaviour
 
     public Sprite[] sprites;
 
+    public TalentsSceneController talentsSceneController;
+
+    public int actualOpenTalentId;
+
     public struct TalentInfo
     {
         public int talentId;
@@ -70,6 +74,7 @@ public class TalentsInfoPanel : MonoBehaviour
         {
             if (talentInfo.talentId == talentId)
             {
+                actualOpenTalentId = talentId;
                 infoPanel.SetActive(true);
                 image.sprite = sprites[talentId];
                 nameText.text = talentInfo.talentName;
@@ -83,6 +88,21 @@ public class TalentsInfoPanel : MonoBehaviour
         infoPanel.SetActive(false);
     }
 
+    public void LearnTalent()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if(talentsSceneController.talents[i, j].talentId == actualOpenTalentId)
+                {
+                    talentsSceneController.talents[i, 0].isActive = talentsSceneController.talents[i, 1].isActive = talentsSceneController.talents[i, 2].isActive = false;
+                    talentsSceneController.talents[i, j].isActive = true;
+                    CloseTalentInfo();
+                }
 
+            }
+        }
+    }
 }
 
