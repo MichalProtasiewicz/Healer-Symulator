@@ -243,7 +243,7 @@ PrefabInstance:
     - target: {fileID: 6315026760323008955, guid: 50939f80a95f01d4c831c93237568a04,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6315026760323008955, guid: 50939f80a95f01d4c831c93237568a04,
         type: 3}
@@ -2281,7 +2281,7 @@ MonoBehaviour:
   talents60lvl: {fileID: 758421285}
   talents80lvl: {fileID: 1665602327}
   talents100lvl: {fileID: 410487767}
-  playerLvl: 50
+  playerLvl: 20
 --- !u!4 &472330296
 Transform:
   m_ObjectHideFlags: 0
@@ -2331,7 +2331,7 @@ RectTransform:
   - {fileID: 1537446720}
   - {fileID: 303183687}
   m_Father: {fileID: 598247396}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5501302}
   m_AnchorMax: {x: 0.5, y: 0.5501302}
@@ -2388,7 +2388,7 @@ PrefabInstance:
     - target: {fileID: 7492533257446766730, guid: 1bd314fe24b106d449362ed18167f770,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7492533257446766730, guid: 1bd314fe24b106d449362ed18167f770,
         type: 3}
@@ -2675,9 +2675,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 10667402}
   - {fileID: 566120841}
   - {fileID: 551440602}
+  - {fileID: 10667402}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
