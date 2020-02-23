@@ -7,7 +7,7 @@ public class TalentController : MonoBehaviour
 {
     public int talentId;
     public bool isActive;
-    public Image talentImage;
+    public Image borderImage;
     public Button button;
 
     void Start()
@@ -18,9 +18,9 @@ public class TalentController : MonoBehaviour
     void Update()
     {
         if (isActive)
-            talentImage.color = new Color32(255,255,255,255);
+            borderImage.color = new Color32(255,247,0,255);
         else
-            talentImage.color = new Color32(192, 192, 192, 255);
+            borderImage.color = new Color32(192, 192, 192, 255);
     }
     
 }
