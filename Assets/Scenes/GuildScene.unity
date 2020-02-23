@@ -849,51 +849,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4583635481117982849, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583635481117982849, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583635481117982849, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583635481117982849, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583635481117982849, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010909064517671463, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010909064517671463, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010909064517671463, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7010909064517671463, guid: 1bd314fe24b106d449362ed18167f770,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd314fe24b106d449362ed18167f770, type: 3}
 --- !u!224 &178370967 stripped
