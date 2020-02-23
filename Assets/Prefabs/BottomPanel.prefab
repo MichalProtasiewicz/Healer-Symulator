@@ -88,7 +88,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9143137262869157355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2879,6 +2879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6315026761124630789}
   - component: {fileID: 6315026761124630788}
+  - component: {fileID: 147238230}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -2961,6 +2962,20 @@ MonoBehaviour:
           m_StringArgument: MapScene
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &147238230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315026761124630790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee48b3ac155389549ad65c5c92daddf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 6315026760855812112}
+  text: {fileID: 6315026759848843713}
 --- !u!1 &6315026761137147617
 GameObject:
   m_ObjectHideFlags: 0
