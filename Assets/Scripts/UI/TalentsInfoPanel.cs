@@ -99,6 +99,7 @@ public class TalentsInfoPanel : MonoBehaviour
                     talentsSceneController.talents[i, 0].isActive = talentsSceneController.talents[i, 1].isActive = talentsSceneController.talents[i, 2].isActive = false;
                     talentsSceneController.talents[i, j].isActive = true;
                     CloseTalentInfo();
+                    PlayerPrefs.SetInt("talent"+ talentsSceneController.talents[i, j].unlockAtlvl, actualOpenTalentId);
                 }
 
             }

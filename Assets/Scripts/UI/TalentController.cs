@@ -9,10 +9,14 @@ public class TalentController : MonoBehaviour
     public bool isActive;
     public Image borderImage;
     public Button button;
+    public string unlockAtlvl;
 
     void Start()
     {
-
+        if(PlayerPrefs.GetInt("talent" + unlockAtlvl) == talentId)
+        {
+            isActive = true;
+        }
     }
 
     void Update()
