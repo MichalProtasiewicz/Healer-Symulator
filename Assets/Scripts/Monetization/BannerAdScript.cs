@@ -22,5 +22,7 @@ public class BannerAdScript : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
         Advertisement.Banner.Show(placementId);
+        yield return new WaitForSeconds(15.0f);
+        Advertisement.Banner.Hide();
     }
 }
