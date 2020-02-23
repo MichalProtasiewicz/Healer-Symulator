@@ -35,21 +35,21 @@ public class TalentsInfoPanel : MonoBehaviour
 
     void Awake()
     {
-        TalentInfo talent1 = new TalentInfo(0, "Heal", "Si immediate danger.");
-        TalentInfo talent2 = new TalentInfo(1, "Flash Heal", "Simple singns, where the target is in danger of dying.");
-        TalentInfo talent3 = new TalentInfo(2, "Renew", "Heals the target over 15 secondd to heal tanks or constantly low damage.");
-        TalentInfo talent4 = new TalentInfo(3, "Dispel Magic", "Allows you to remove our ally.");
-        TalentInfo talent5 = new TalentInfo(4, "Prayer of Healing", "Heals the targetyour most reliable sources of AoE healing.");
-        TalentInfo talent6 = new TalentInfo(5, "Prayer of Mending", "Places a buff on the targeted when they take damage and jumps to ane of your most efficient Talents.");
-        TalentInfo talent7 = new TalentInfo(6, "Divine Hymn", "Channeled Talent that han be used to mitigate high raid damage.");
-        TalentInfo talent8 = new TalentInfo(7, "Holy Word Serenity", "Instant cast, single-target heal withng Heal or Flash Heal.");
-        TalentInfo talent9 = new TalentInfo(8, "Holy Word Sanctify", "Instant cast Talent that heals target group.  of Healing or Renew.");
-        TalentInfo talent10 = new TalentInfo(9, "Holy Word Sanctify", "Instant cast Talent that hf Healing or Renew.");
-        TalentInfo talent11 = new TalentInfo(10, "Holy Word Sanctify", "Instant cast Talting Prayer of Healing or Renew.");
-        TalentInfo talent12 = new TalentInfo(11, "Holy Word Sanctify", "Instant cast Talent that heals sting Prayer of Healing or Renew.");
-        TalentInfo talent13 = new TalentInfo(12, "Holy Word Sanctify", "Instant cast Talent that heals target group. It hasealing or Renew.");
-        TalentInfo talent14 = new TalentInfo(13, "Holy Word Sanctify", "Instant cast Talent that heals target group. It has a 60-second cooldown, which can beng or Renew.");
-        TalentInfo talent15 = new TalentInfo(14, "Holy Word Sanctify", "Instant cast Talent thatcond cooldown, which can be further reduced by casting Prayer of Healing or Renew.");
+        TalentInfo talent1 = new TalentInfo(0, "Spirit Enchance", "Light bless you, your mana regenerate faster.");
+        TalentInfo talent2 = new TalentInfo(1, "Inteligence Power", "Long time meditation give you more inteligence");
+        TalentInfo talent3 = new TalentInfo(2, "Prayer of Fortidue", "Powerfull stamina buff for all raid members.");
+        TalentInfo talent4 = new TalentInfo(3, "Previous focus", "Heal and Flash Heal, heal previeous target for small amout");
+        TalentInfo talent5 = new TalentInfo(4, "Renew renew", "Heal and Flash Heal can refresh renew on target.");
+        TalentInfo talent6 = new TalentInfo(5, "Bonus Flash", "Cast Flash Heal have chance to make your next Flash Heal instant");
+        TalentInfo talent7 = new TalentInfo(6, "Ressurect", "After Angel you not die.");
+        TalentInfo talent8 = new TalentInfo(7, "Angel Bless", "Your angel form takes more time.");
+        TalentInfo talent9 = new TalentInfo(8, "Revive", "You can ressurect first die person in your raid.");
+        TalentInfo talent10 = new TalentInfo(9, "Prayer of Mana", "Prayer of Healing cost less mana.");
+        TalentInfo talent11 = new TalentInfo(10, "Dispel Healing", "Dispel Magic also heal target.");
+        TalentInfo talent12 = new TalentInfo(11, "Bless Hymn", "Untill Divine Hymn, Prayer of Mending jump to others members, without lose stacks.");
+        TalentInfo talent13 = new TalentInfo(12, "Speed Holy Word", "Holy Word Serenity and Sanctify decrease cooldown more efficiently.");
+        TalentInfo talent14 = new TalentInfo(13, "Holy Word Power", "When Holy Word Serenity or Sanctify finish cooldown, you will heal all raid for small amout.");
+        TalentInfo talent15 = new TalentInfo(14, "Prayer over Time", "Prayer of Mending have chance to leave Renew.");
 
         TalentsInfo.Add(talent1);
         TalentsInfo.Add(talent2);

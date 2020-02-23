@@ -635,6 +635,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 924865270}
   button: {fileID: 72747201}
+  unlockAtlvl: 20
 --- !u!1 &153207764
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +830,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 44536472}
   button: {fileID: 159442199}
+  unlockAtlvl: 20
 --- !u!1 &167917669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1159,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 4934031}
   button: {fileID: 191585044}
+  unlockAtlvl: 40
 --- !u!1 &234377045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1613,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 413920277}
   button: {fileID: 375979253}
+  unlockAtlvl: 80
 --- !u!1 &409758872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,6 +2256,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1470789929}
   button: {fileID: 459423731}
+  unlockAtlvl: 20
 --- !u!1 &472330294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,6 +3106,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 184860621}
   button: {fileID: 652568486}
+  unlockAtlvl: 80
 --- !u!1 &717355755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +3289,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 153207766}
   button: {fileID: 730079703}
+  unlockAtlvl: 80
 --- !u!1 &731345122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3399,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1091018391}
   button: {fileID: 731345124}
+  unlockAtlvl: 40
 --- !u!1 &745088228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,6 +4346,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1653710379}
   button: {fileID: 1190317978}
+  unlockAtlvl: 60
 --- !u!1 &1274261096
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,6 +4529,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1472359648}
   button: {fileID: 1289829694}
+  unlockAtlvl: 60
 --- !u!1 &1460613880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,6 +5008,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 439702626}
   button: {fileID: 1610486420}
+  unlockAtlvl: 60
 --- !u!1 &1653710377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5335,6 +5346,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1460613882}
   button: {fileID: 1704483253}
+  unlockAtlvl: 100
 --- !u!1 &1710873330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5645,6 +5657,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1978412349}
   button: {fileID: 1746080366}
+  unlockAtlvl: 100
 --- !u!1 &1747346466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5827,6 +5840,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 1884127362}
   button: {fileID: 1753792307}
+  unlockAtlvl: 100
 --- !u!1 &1830002247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6544,6 +6558,7 @@ MonoBehaviour:
   isActive: 0
   borderImage: {fileID: 892626881}
   button: {fileID: 2002441371}
+  unlockAtlvl: 40
 --- !u!1 &2034665966
 GameObject:
   m_ObjectHideFlags: 0
