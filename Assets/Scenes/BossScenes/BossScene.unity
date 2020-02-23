@@ -4945,6 +4945,8 @@ MonoBehaviour:
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
   bossName: Patchverek
+  expReward: 35
+  player: {fileID: 1772701227}
 --- !u!4 &414345891
 Transform:
   m_ObjectHideFlags: 0

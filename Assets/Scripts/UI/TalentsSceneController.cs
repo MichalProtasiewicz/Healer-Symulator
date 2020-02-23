@@ -13,6 +13,8 @@ public class TalentsSceneController : MonoBehaviour
 
     void Awake()
     {
+        playerLvl = PlayerPrefs.GetInt("PlayerLevel");
+
         talents20lvl.color = talents40lvl.color = talents60lvl.color = talents80lvl.color = talents100lvl.color = new Color32(192, 192, 192, 255);
 
         talents = new TalentController[5, 3];

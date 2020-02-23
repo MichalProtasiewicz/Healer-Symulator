@@ -33,6 +33,9 @@ public class Boss : MonoBehaviour
     public GameObject victoryScreen;
     public string bossName;
 
+    public int expReward;
+    public Player player;
+
 
 
     // Start is called before the first frame update
@@ -78,6 +81,8 @@ public class Boss : MonoBehaviour
             victoryScreen.SetActive(true);
 
             PlayerPrefs.SetFloat(bossName, 1);
+            player.CheckPlayerLevel(expReward);
+            
         }
     }
 

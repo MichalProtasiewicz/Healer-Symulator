@@ -26,19 +26,18 @@ public class Player : MonoBehaviour
 
     public Spells[] spellBook;
 
+    private int playerExp;
+    private int expNeedToLvl;
+    private int playerLvl;
 
-    // Start is called before the first frame update
     void Start()
     {
         castText.text = "";
         castbar.fillAmount = 0;
         castbar.UpdateBar();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        if (PlayerPrefs.HasKey("playerSpellpower"))
+            spellPower = PlayerPrefs.GetFloat("playerSpellpower");
     }
 
     public void CastSpell()
@@ -150,6 +149,26 @@ public class Player : MonoBehaviour
             castbar.UpdateBar();
             isCasting = false;
         }
+    }
+
+    public void CheckPlayerLevel(int expReward)
+    {
+        PlayerPrefs.SetInt("PlayerExp", PlayerPrefs.GetInt("PlayerExp") + expReward);
+
+        playerLvl = 1;
+        playerExp = PlayerPrefs.GetInt("PlayerExp");
+        while (playerExp > 0)
+        {
+            expNeedToLvl = (playerLvl - 1 + 200 * 2 ^ ((playerLvl - 1) / 7)) / 6;
+            if (playerExp >= expNeedToLvl)
+            {
+                playerExp = playerExp - expNeedToLvl;
+                playerLvl++;
+            }
+            else
+                break;
+        }
+        PlayerPrefs.SetInt("PlayerLevel", playerLvl);
     }
 
    
