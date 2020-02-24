@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
         castbar.fillAmount = 0;
         castbar.UpdateBar();
 
-        if (PlayerPrefs.HasKey("playerSpellpower"))
-            spellPower = PlayerPrefs.GetFloat("playerSpellpower");
+        if (PlayerPrefs.HasKey("PlayerSpellPower"))
+            spellPower = PlayerPrefs.GetFloat("PlayerSpellPower");
     }
 
     public void CastSpell()

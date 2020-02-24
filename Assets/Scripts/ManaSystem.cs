@@ -22,8 +22,8 @@ public class ManaSystem : MonoBehaviour
 
         InvokeRepeating("RegenerateMana", 0.0f, 1.0f );
 
-        if (PlayerPrefs.HasKey("playerManaRegenerate"))
-            regenMana = PlayerPrefs.GetFloat("playerManaRegenerate");
+        if (PlayerPrefs.HasKey("PlayerManaRegenerate"))
+            regenMana = PlayerPrefs.GetFloat("PlayerManaRegenerate");
     }
 
     // Update is called once per frame

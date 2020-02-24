@@ -12,7 +12,7 @@ public class InfoBarController : MonoBehaviour
     void Awake()
     {
         if (PlayerPrefs.HasKey("PlayerLevel"))
-            playerLevelText.text = "Level:" + PlayerPrefs.GetInt("PlayerLevel").ToString();
+            playerLevelText.text = "Level: " + PlayerPrefs.GetInt("PlayerLevel").ToString();
         else
             playerLevelText.text = "Level: 1";
 
