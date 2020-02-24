@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLevelText: {fileID: 4583635481117982849}
+  playerGoldText: {fileID: 7010909064517671463}
 --- !u!1 &4214871897289349243
 GameObject:
   m_ObjectHideFlags: 0

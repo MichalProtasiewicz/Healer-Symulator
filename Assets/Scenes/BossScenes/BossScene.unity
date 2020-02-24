@@ -4946,6 +4946,7 @@ MonoBehaviour:
   victoryScreen: {fileID: 1754162827}
   bossName: Patchverek
   expReward: 35
+  goldReward: 2
   player: {fileID: 1772701227}
 --- !u!4 &414345891
 Transform:

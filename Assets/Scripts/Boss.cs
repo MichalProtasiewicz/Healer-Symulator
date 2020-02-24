@@ -34,6 +34,7 @@ public class Boss : MonoBehaviour
     public string bossName;
 
     public int expReward;
+    public int goldReward;
     public Player player;
 
 
@@ -82,6 +83,7 @@ public class Boss : MonoBehaviour
 
             PlayerPrefs.SetFloat(bossName, 1);
             player.CheckPlayerLevel(expReward);
+            PlayerGoldController.AddGold(goldReward);
             
         }
     }
