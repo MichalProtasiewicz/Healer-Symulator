@@ -3899,10 +3899,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119b0db16e22baa40b856390aa835c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIntellectText: {fileID: 0}
-  playerSpellPowerText: {fileID: 0}
-  playerSpiritText: {fileID: 0}
-  playerManaRegenText: {fileID: 0}
+  playerIntellectText: {fileID: 1839736344}
+  playerSpellPowerText: {fileID: 1683792208}
+  playerSpiritText: {fileID: 2041195761}
+  playerManaRegenText: {fileID: 801199415}
 --- !u!1 &1696046436
 GameObject:
   m_ObjectHideFlags: 0
