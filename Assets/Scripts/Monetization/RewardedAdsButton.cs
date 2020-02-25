@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Button))]
 public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
@@ -13,6 +14,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
 #endif
 
     Button myButton;
+    bool givedReward;
     public string myPlacementId = "rewardedVideo";
 
     void Start()
@@ -48,16 +50,22 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
+        
         // Define conditional logic for each ad completion status:
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
-            PlayerGoldController.AddGold(10);
+            if(givedReward==false)
+            {
+                PlayerGoldController.AddGold(5);
+                givedReward = true;
+                myButton.interactable = false;
+                SceneManager.LoadScene("ShopScene");
+            } 
         }
         else if (showResult == ShowResult.Skipped)
         {
             // Do not reward the user for skipping the ad.
-            PlayerGoldController.AddGold(5);
         }
         else if (showResult == ShowResult.Failed)
         {
@@ -73,6 +81,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     public void OnUnityAdsDidStart(string placementId)
     {
         // Optional actions to take when the end-users triggers an ad.
+        givedReward = false;
     }
 
 
