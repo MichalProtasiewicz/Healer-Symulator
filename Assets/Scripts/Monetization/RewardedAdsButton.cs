@@ -59,8 +59,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
             {
                 PlayerGoldController.AddGold(5);
                 givedReward = true;
-                myButton.interactable = false;
                 SceneManager.LoadScene("ShopScene");
+                myButton.interactable = false;
             } 
         }
         else if (showResult == ShowResult.Skipped)
