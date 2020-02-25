@@ -52,10 +52,12 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
+            PlayerGoldController.AddGold(10);
         }
         else if (showResult == ShowResult.Skipped)
         {
             // Do not reward the user for skipping the ad.
+            PlayerGoldController.AddGold(5);
         }
         else if (showResult == ShowResult.Failed)
         {
