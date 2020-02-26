@@ -22,9 +22,18 @@ public class TalentController : MonoBehaviour
     void Update()
     {
         if (isActive)
-            borderImage.color = new Color32(255,247,0,255);
+            borderImage.color = new Color32(255, 247, 0, 255);  
         else
             borderImage.color = new Color32(192, 192, 192, 255);
     }
     
+    public virtual void TalentFunction()
+    {
+
+    }
+    public virtual void DeactivateTalentFunction()
+    {
+
+    }
+
 }

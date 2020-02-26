@@ -15,12 +15,12 @@ public class StatisticCointainerController : MonoBehaviour
         ///INT
 
         /// SpellPower
-        if (PlayerPrefs.HasKey("PlayerSpellower"))
-            playerSpellPowerText.text = "Spell Power: " + PlayerPrefs.GetFloat("PlayerSpellower").ToString();
+        if (PlayerPrefs.HasKey("PlayerSpellPower"))
+            playerSpellPowerText.text = "Spell Power: " + PlayerPrefs.GetFloat("PlayerSpellPower").ToString();
         else
         {
-            PlayerPrefs.SetFloat("PlayerSpellower", 10);
-            playerSpellPowerText.text = "Spell Power: " + PlayerPrefs.GetFloat("PlayerSpellower").ToString();
+            PlayerPrefs.SetFloat("PlayerSpellPower", 10);
+            playerSpellPowerText.text = "Spell Power: " + PlayerPrefs.GetFloat("PlayerSpellPower").ToString();
         }
 
         /// Spirit
