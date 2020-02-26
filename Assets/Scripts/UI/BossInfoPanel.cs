@@ -92,4 +92,5 @@ public class BossInfoPanel : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToChangeName);
     }
+
 }
