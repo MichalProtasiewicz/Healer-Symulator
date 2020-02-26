@@ -131,7 +131,9 @@ public class Boss : MonoBehaviour
             do
             {
                 randomX = Random.Range(0, x);
-                randomY = Random.Range(0, y);      
+                randomY = Random.Range(0, y);
+                if (raidController.allDead)
+                    break;
             } while (raidController.allRaid[randomX, randomY].isAlive == false);
             
             timeNextDebuff = Time.time + debuff.cooldown;
@@ -168,6 +170,8 @@ public class Boss : MonoBehaviour
                 {
                     randomI = Random.Range(0, raidController.allRaid.GetLength(0));
                     randomJ = Random.Range(0, raidController.allRaid.GetLength(1));
+                    if (raidController.allDead)
+                        break;
                 } while ((!raidController.allRaid[randomI, randomJ].isAlive) && (raidController.allRaid[randomI, randomJ] != target));
 
                 target = raidController.allRaid[randomI, randomJ];
