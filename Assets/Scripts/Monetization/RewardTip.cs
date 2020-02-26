@@ -13,7 +13,7 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
     private string gameId = "3360460";
 #endif
 
-    public Button myButton;
+    Button myButton;
     bool givedReward;
     public string myPlacementId = "rewardedVideo";
 
@@ -25,6 +25,7 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
         tipText.SetActive(false);
         tipButton.SetActive(true);
 
+        myButton = GetComponent<Button>();
 
         // Set interactivity to be dependent on the Placement’s status:
         myButton.interactable = Advertisement.IsReady(myPlacementId);
