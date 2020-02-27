@@ -17,10 +17,13 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
     bool givedReward;
     public string myPlacementId = "rewardedVideo";
 
-    public BossInfoPanel bossInfoPanel;
+    public GameObject tipText;
+    public GameObject tipButton;
 
     void Start()
     {
+        tipText.SetActive(false);
+        tipButton.SetActive(true);
 
         myButton = GetComponent<Button>();
 
@@ -58,7 +61,7 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
-            bossInfoPanel.AdReward();
+            TipsVisible();
         }
         else if (showResult == ShowResult.Skipped)
         {
@@ -81,7 +84,11 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
         givedReward = false;
     }
 
-
+    public void TipsVisible()
+    {
+        tipButton.SetActive(false);
+        tipText.SetActive(true);
+    }
 
 
 }
