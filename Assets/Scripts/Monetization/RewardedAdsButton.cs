@@ -14,7 +14,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
 #endif
 
     Button myButton;
-    bool givedReward;
+   // bool givedReward;
     public string myPlacementId = "rewardedVideo";
 
     void Start()
@@ -55,6 +55,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
+            /*
             if(givedReward==false)
             {
                 PlayerGoldController.AddGold(5);
@@ -62,6 +63,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
                 SceneManager.LoadScene("ShopScene");
                 myButton.interactable = false;
             } 
+            */
         }
         else if (showResult == ShowResult.Skipped)
         {
@@ -81,8 +83,14 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     public void OnUnityAdsDidStart(string placementId)
     {
         // Optional actions to take when the end-users triggers an ad.
-        givedReward = false;
+
+        //givedReward = false;
     }
 
+    public void AdReward()
+    {
+        PlayerGoldController.AddGold(5);
+        SceneManager.LoadScene("ShopScene");
+    }
 
 }

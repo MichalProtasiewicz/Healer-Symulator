@@ -19,6 +19,7 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
 
     void Start()
     {
+        bossInfoPanel = GameObject.Find("BossInfoContainer").GetComponent<BossInfoPanel>();
         myButton = GetComponent<Button>();
 
         // Set interactivity to be dependent on the Placement’s status:
@@ -54,7 +55,7 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
             // Reward the user for watching the ad to completion.
-            bossInfoPanel.AdReward();
+            //bossInfoPanel.AdReward();
         }
         else if (showResult == ShowResult.Skipped)
         {
