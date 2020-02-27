@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Button))]
 public class RewardTip : MonoBehaviour, IUnityAdsListener
@@ -14,14 +13,12 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
 #endif
 
     Button myButton;
-    bool givedReward;
-    public string myPlacementId = "rewardedVideo";
+    public string myPlacementId = "TipsReward";
 
     public BossInfoPanel bossInfoPanel;
 
     void Start()
     {
-
         myButton = GetComponent<Button>();
 
         // Set interactivity to be dependent on the Placement’s status:
@@ -53,7 +50,6 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
-
         // Define conditional logic for each ad completion status:
         if (showResult == ShowResult.Finished)
         {
@@ -78,10 +74,5 @@ public class RewardTip : MonoBehaviour, IUnityAdsListener
     public void OnUnityAdsDidStart(string placementId)
     {
         // Optional actions to take when the end-users triggers an ad.
-        givedReward = false;
     }
-
-
-
-
 }
