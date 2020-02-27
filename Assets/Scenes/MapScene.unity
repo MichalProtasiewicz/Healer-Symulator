@@ -694,8 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPlacementId: rewardedVideo
-  tipText: {fileID: 887981282}
-  tipButton: {fileID: 1273165075}
+  bossInfoPanel: {fileID: 1325262861}
 --- !u!114 &134135178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4268,7 +4267,8 @@ MonoBehaviour:
   image2: {fileID: 551060153}
   debuf1InfoText: {fileID: 995246465}
   debuf2InfoText: {fileID: 1781282339}
-  tipText: {fileID: 887981283}
+  tipText: {fileID: 887981282}
+  tipButton: {fileID: 1273165075}
   sceneToChangeName: 
   sprites:
   - {fileID: 21300000, guid: 9cef6775c61fd3a4da091e8b133fe6f8, type: 3}

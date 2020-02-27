@@ -15,10 +15,13 @@ public class BossInfoPanel : MonoBehaviour
     public Image image2;
     public TextMeshProUGUI debuf1InfoText;
     public TextMeshProUGUI debuf2InfoText;
-    public TextMeshProUGUI tipText;
+    public GameObject tipText;
+    public GameObject tipButton;
     public string sceneToChangeName = "";
 
     public Sprite[] sprites;
+
+    private BossInfo opennedBossInfo;
 
     public struct BossInfo
     {
@@ -59,9 +62,11 @@ public class BossInfoPanel : MonoBehaviour
         {
             if (bossInfo.bossId == bossId)
             {
+                opennedBossInfo = bossInfo;
+
                 infoPanel.SetActive(true);
                 nameText.text = bossInfo.bossName;
-                tipText.text = bossInfo.tipText;
+                tipText.GetComponent<TextMeshProUGUI>().text = bossInfo.tipText;
                 sceneToChangeName = bossInfo.sceneName;
                 if (bossInfo.debuf1InfoText != "")
                 {
@@ -78,7 +83,7 @@ public class BossInfoPanel : MonoBehaviour
                     image2.sprite = sprites[bossId + 1];
                 }
                 else
-                    debuff2.SetActive(false);
+                    debuff2.SetActive(false);           
             }
         }
     }
@@ -86,6 +91,8 @@ public class BossInfoPanel : MonoBehaviour
     public void CloseWindow()
     {
         infoPanel.SetActive(false);
+        tipText.SetActive(false);
+        tipButton.SetActive(true);
     }
 
     public void ChangeScene()
@@ -93,4 +100,9 @@ public class BossInfoPanel : MonoBehaviour
         SceneManager.LoadScene(sceneToChangeName);
     }
 
+    public void AdReward()
+    {
+        tipText.SetActive(true);
+        tipButton.SetActive(false);
+    }    
 }
