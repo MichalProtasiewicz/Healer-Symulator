@@ -4,7 +4,6 @@ using UnityEngine.Advertisements;
 
 public class BannerAdScript : MonoBehaviour
 {
-
     public string gameId = "3360460";
     public string placementId = "bannerPlacement";
     public bool testMode = true;

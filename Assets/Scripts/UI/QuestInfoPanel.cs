@@ -1,25 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class QuestInfoPanel : MonoBehaviour
 {
-    public GameObject infoPanel;
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI infoText;
-    public GameObject takeQuestButton;
-    public GameObject finishQuestButton;
+    public GameObject infoPanel, takeQuestButton, finishQuestButton;
+    public TextMeshProUGUI nameText, infoText;
 
     public struct QuestInfo
     {
         public int questId;
-        public string questName;
-        public string questText;
-        public bool isDone;
-        public bool isTook;
-
+        public string questName, questText;
+        public bool isDone, isTook;
 
         public QuestInfo(int questId, string questName, string questText, bool isDone, bool isTook)
         {
@@ -30,14 +22,10 @@ public class QuestInfoPanel : MonoBehaviour
             this.isTook = isTook;
         }
     }
-
     List<QuestInfo> QuestsInfo = new List<QuestInfo>();
-
 
     void Awake()
     {
-        // jesli bedziemy wczytywac scene wartosci ponizszych questow beda sie nadpisywac?
-
         QuestInfo defaultQuest1 = new QuestInfo(0, "Default Quest1", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             false, false);
         QuestInfo defaultQuest2 = new QuestInfo(1, "Default Quest2", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -90,13 +78,11 @@ public class QuestInfoPanel : MonoBehaviour
 
     public void AcceptQuest(int questId)
     {
-        
         CloseInfoPanel();
     }
 
     public void FinishQuest(int questId)
-    {
-        
+    { 
         CloseInfoPanel();
     }
 

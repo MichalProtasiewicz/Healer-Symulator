@@ -1,22 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class TalentsSceneController : MonoBehaviour
 {
-    public TalentController[,] talents;
-
-    public TextMeshProUGUI talents20lvl, talents40lvl, talents60lvl, talents80lvl, talents100lvl;
-
     public int playerLvl;
+    public TalentController[,] talents;
+    public TextMeshProUGUI talents20lvl, talents40lvl, talents60lvl, talents80lvl, talents100lvl;
 
     void Awake()
     {
         playerLvl = PlayerPrefs.GetInt("PlayerLevel");
-
         talents20lvl.color = talents40lvl.color = talents60lvl.color = talents80lvl.color = talents100lvl.color = new Color32(192, 192, 192, 255);
-
         talents = new TalentController[5, 3];
         int tmp = 1;
 
@@ -55,6 +49,5 @@ public class TalentsSceneController : MonoBehaviour
             talents[4, 0].button.interactable = talents[4, 1].button.interactable = talents[4, 2].button.interactable = true;
             talents100lvl.color = new Color32(255, 247, 0, 255);
         }
-
     }
 }

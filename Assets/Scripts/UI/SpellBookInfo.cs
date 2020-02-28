@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -8,16 +7,12 @@ public class SpellBookInfo : MonoBehaviour
 {
     public GameObject infoPanel;
     public Image image;
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI infoText;
-
+    public TextMeshProUGUI nameText, infoText;
     public Sprite[] sprites; 
-
     public struct SpellInfo
     {
         public int spellId;
-        public string spellName;
-        public string spellInfo;
+        public string spellName, spellInfo;
 
         public SpellInfo(int spellId, string spellName, string spellInfo)
         {
@@ -26,7 +21,6 @@ public class SpellBookInfo : MonoBehaviour
             this.spellInfo = spellInfo;
         }
     }
-
     List<SpellInfo> SpellsInfo = new List<SpellInfo>();
 
     void Awake()
@@ -40,7 +34,6 @@ public class SpellBookInfo : MonoBehaviour
         SpellInfo divineHymn = new SpellInfo(6, "Divine Hymn", "Channeled spell that heals all raid members. It is a powerful raid cooldown that can be used to mitigate high raid damage.");
         SpellInfo holyWordSerenity = new SpellInfo(7, "Holy Word Serenity", "Instant cast, single-target heal with a 60-second cooldown that can be further reduced by casting Heal or Flash Heal.");
         SpellInfo holyWordSanctify = new SpellInfo(8, "Holy Word Sanctify", "Instant cast spell that heals target group. It has a 60-second cooldown, which can be further reduced by casting Prayer of Healing or Renew.");
-
 
         SpellsInfo.Add(heal);
         SpellsInfo.Add(flashHeal);
@@ -71,7 +64,5 @@ public class SpellBookInfo : MonoBehaviour
     {
         infoPanel.SetActive(false);
     }
-
-
 }
 

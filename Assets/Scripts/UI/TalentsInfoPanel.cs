@@ -1,27 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class TalentsInfoPanel : MonoBehaviour
 {
+    public int actualOpenTalentId;
     public GameObject infoPanel;
     public Image image;
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI infoText;
-
+    public TextMeshProUGUI nameText, infoText;
     public Sprite[] sprites;
-
     public TalentsSceneController talentsSceneController;
-
-    public int actualOpenTalentId;
 
     public struct TalentInfo
     {
         public int talentId;
-        public string talentName;
-        public string talentInfo;
+        public string talentName, talentInfo;
 
         public TalentInfo(int talentId, string talentName, string talentInfo)
         {
@@ -30,7 +24,6 @@ public class TalentsInfoPanel : MonoBehaviour
             this.talentInfo = talentInfo;
         }
     }
-
     List<TalentInfo> TalentsInfo = new List<TalentInfo>();
 
     void Awake()
@@ -111,7 +104,6 @@ public class TalentsInfoPanel : MonoBehaviour
                     CloseTalentInfo();
                     PlayerPrefs.SetInt("Talent"+ talentsSceneController.talents[i, j].unlockAtlvl, actualOpenTalentId);
                 }
-
             }
         }
     }

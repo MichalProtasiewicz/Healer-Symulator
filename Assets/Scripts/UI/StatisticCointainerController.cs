@@ -1,14 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class StatisticCointainerController : MonoBehaviour
 {
-    public TextMeshProUGUI playerIntellectText;
-    public TextMeshProUGUI playerSpellPowerText;
-    public TextMeshProUGUI playerSpiritText;
-    public TextMeshProUGUI playerManaRegenText;
+    public TextMeshProUGUI playerIntellectText, playerSpellPowerText, playerSpiritText, playerManaRegenText;
 
     void Awake()
     {
@@ -34,6 +29,4 @@ public class StatisticCointainerController : MonoBehaviour
             playerManaRegenText.text = "Mana Regen: " + PlayerPrefs.GetFloat("PlayerManaRegenerate").ToString();
         }
     }
-
-
 }

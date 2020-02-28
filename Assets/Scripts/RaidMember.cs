@@ -1,36 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class RaidMember : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
+    public float health, maxHealth, power, attackSpeed, attackCooldown;
+    private float timeNextAttack;
+    public bool isAlive;
+    public bool debuffIsActive = false;
     public HealthBar healthBar;
-
     public SpriteRenderer borderIndicator;
     public GameObject renewIndicator;
     public Coroutine renewCoroutine;
-
     public Text healthText;
-
-    public bool isAlive;
-
-    public float power;
-    public float attackSpeed;
-    public float attackCooldown;
-    private float timeNextAttack;
-
     public Boss boss;
-
-    public bool debuffIsActive = false;
     public GameObject debuffIndicator;
     public Coroutine debuffCoroutine;
-
     public GameObject pomIndicator;
     public Text pomStacksText;
-
     public RaidController.Role role;
     public GameObject roleIndicator;
     public RaidController raidController;
@@ -42,9 +28,7 @@ public class RaidMember : MonoBehaviour
             maxHealth += 0.1f * maxHealth;
         health = maxHealth;
         UpdateRaidBar();
-
         raidController = FindObjectOfType<RaidController>();
-
         switch (role)
         {
             case RaidController.Role.tank:
@@ -73,7 +57,6 @@ public class RaidMember : MonoBehaviour
             }
             if (health > maxHealth)
                 health = maxHealth;
-
             UpdateRaidBar();
             if(role == RaidController.Role.healer)
                 HealAlly();
@@ -104,14 +87,11 @@ public class RaidMember : MonoBehaviour
         if (Time.time > timeNextAttack && boss.isAlive)
         {
             timeNextAttack = Time.time + (attackCooldown - attackSpeed);
-
             int randomGroup = Random.Range(0, 4);
             for(int i = 0; i < raidController.playersCount; i++)
             {
                 if(raidController.allRaid[randomGroup, i].isAlive)
-                {
                     raidController.allRaid[randomGroup, i].health = raidController.allRaid[randomGroup, i].health + power;
-                }
             }
         }
     }

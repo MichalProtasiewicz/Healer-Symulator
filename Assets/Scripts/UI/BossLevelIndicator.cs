@@ -3,9 +3,8 @@ using UnityEngine.UI;
 
 public class BossLevelIndicator : MonoBehaviour
 {
-    public string bossName;
+    public string bossName, nameNeededToUnlock;
     public bool isActive;
-    public string nameNeededToUnlock;
     public GameObject bossIndicator;
 
     void Awake()
@@ -20,10 +19,7 @@ public class BossLevelIndicator : MonoBehaviour
             isActive = false;
             bossIndicator.SetActive(false);
         }
-
-
         Image indicatorImage = bossIndicator.GetComponent<Image>();
-
         if (PlayerPrefs.GetFloat(bossName) == 1)
             indicatorImage.color = new Color32(142, 142, 142, 255);
         else

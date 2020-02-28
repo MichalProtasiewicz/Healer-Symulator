@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-
 
 public class InfoBarController : MonoBehaviour
 {
-    public TextMeshProUGUI playerLevelText;
-    public TextMeshProUGUI playerGoldText;
+    public TextMeshProUGUI playerLevelText, playerGoldText;
 
     void Awake()
     {

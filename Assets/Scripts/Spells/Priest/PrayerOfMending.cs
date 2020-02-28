@@ -1,21 +1,14 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PrayerOfMending : Spells
 {
-
+    public float stacks;
     public HolyWordSanctify holyWordSa;
     public HolyWordSerenity holyWordSe;
-
-    public float stacks;
-
     public RaidMember raidMember;
-
     private Coroutine pomCoroutine;
-
     public RaidController raidController;
-
     public Renew renew;
 
     public override void CastSpell()
@@ -23,15 +16,10 @@ public class PrayerOfMending : Spells
         if (player.targetSpell != null && player.targetSpell.isAlive && Time.time > timeNextSpell)
         {
             timeNextSpell = Time.time + cooldown;
-
             if(pomCoroutine != null)
-            {
                 raidMember.pomIndicator.SetActive(false);
-            }
             pomCoroutine = StartCoroutine(PoMStacksBehavior());
-
             StartCoroutine(CdVisualize(cooldown));
-
             if (PlayerPrefs.GetInt("Talent100") == 13)
             {
                 holyWordSa.Decrease(1);
@@ -47,11 +35,8 @@ public class PrayerOfMending : Spells
         stacks = 5;
         raidMember = player.targetSpell;
         float healthTMP = raidMember.health;
-
         raidMember.pomIndicator.SetActive(true);
         raidMember.pomStacksText.text = stacks.ToString();
-
-
         for (int i = 0; i < durationEffect; i++)
         {
             //player get dmg
@@ -60,19 +45,14 @@ public class PrayerOfMending : Spells
                 raidMember.health = raidMember.health + (player.spellPower * player.spellSellected.healPower);
                 stacks--;
                 raidMember.pomIndicator.SetActive(false);
-
                 if (PlayerPrefs.GetInt("Talent100") == 15)
                     Talent15();
-
                 if (stacks == 0)
-                {
                     break;
-                }
                 else
                 {
                     //random live member
-                    int randomX;
-                    int randomY;
+                    int randomX, randomY;
                     do
                     {
                         randomX = Random.Range(0, raidController.allRaid.GetLength(0) - 1 );
@@ -85,10 +65,8 @@ public class PrayerOfMending : Spells
                 }
             }
             healthTMP = raidMember.health;
-
             yield return new WaitForSeconds(1);
         }
-
         raidMember.pomIndicator.SetActive(false);
     }
 

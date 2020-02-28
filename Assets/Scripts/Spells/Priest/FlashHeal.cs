@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FlashHeal : Spells
 {
     public HolyWordSerenity holyWord;
-
     public RaidMember previousTarget;
-
     public Renew renew;
 
     public override void CastSpell()
@@ -15,23 +11,17 @@ public class FlashHeal : Spells
         if (player.targetSpell != null && player.targetSpell.isAlive && Time.time > timeNextSpell)
         {
             timeNextSpell = Time.time + cooldown;
-
             player.targetSpell.health = player.targetSpell.health + (player.spellPower * player.spellSellected.healPower);
-
             if (PlayerPrefs.GetInt("Talent40") == 4)
                 talent4();
             if (PlayerPrefs.GetInt("Talent40") == 5)
                 talent5();
             if (PlayerPrefs.GetInt("Talent40") == 6)
                 talent6();
-
             StartCoroutine(CdVisualize(cooldown));
-
             if (PlayerPrefs.GetInt("Talent100") == 13)
                 holyWord.Decrease(2);
             holyWord.Decrease(6);
-            
-
         }
     }
 
@@ -41,12 +31,14 @@ public class FlashHeal : Spells
             previousTarget.health = previousTarget.health + 0.25f*(player.spellPower * player.spellSellected.healPower);
         previousTarget = player.targetSpell;
     }
+
     void talent5()
     {
         int randomX = Random.Range(0, 100);
         if (randomX > 75)
             renew.CastSpell();
     }
+
     void talent6()
     {
         if(costMana == 0 || castTime == 0)
@@ -61,5 +53,4 @@ public class FlashHeal : Spells
             castTime = 0;
         }
     }
-
 }

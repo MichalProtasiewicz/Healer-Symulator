@@ -1,45 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
-    public HealthBar healthBar;
-
-    public Text healthText;
-
-    public bool isAlive;
-
-    public RaidMember target;
-    public float changeTargetCooldown;
-    private float timeToChangeTarget = -1;
-
-    public RaidController raidController;
-
-    public float damage;
-    public float attackCooldown;
-    private float timeNextAttack;
-
-    public float aoeDamage;
-    public float aoeAttackCooldown;
-    private float timeNextAoeAttack;
-
-    public Debuff debuff;
-    private float timeNextDebuff;
-
-    public GameObject victoryScreen;
     public string bossName;
-
-    public int expReward;
-    public int goldReward;
+    public int expReward, goldReward;
+    public float health, maxHealth, changeTargetCooldown, damage, attackCooldown, aoeDamage, aoeAttackCooldown;
+    private float timeNextAttack, timeNextAoeAttack, timeNextDebuff;
+    private float timeToChangeTarget = -1;
+    public bool isAlive;
+    public HealthBar healthBar;
+    public Text healthText;
     public Player player;
-
-
-
-    // Start is called before the first frame update
+    public RaidMember target;
+    public RaidController raidController;
+    public Debuff debuff;
+    public GameObject victoryScreen;
+   
     void Start()
     {
         isAlive = true;
@@ -48,7 +25,6 @@ public class Boss : MonoBehaviour
         FocusTarget();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isAlive && !raidController.allDead)
@@ -80,11 +56,9 @@ public class Boss : MonoBehaviour
             isAlive = false;
             healthText.text = "Dead";
             victoryScreen.SetActive(true);
-
             PlayerPrefs.SetFloat(bossName, 1);
             player.CheckPlayerLevel(expReward);
             PlayerGoldController.AddGold(goldReward);
-            
         }
     }
 
@@ -93,7 +67,6 @@ public class Boss : MonoBehaviour
         if (Time.time > timeNextAttack )
         {
             timeNextAttack = Time.time + attackCooldown;
-
             if(target.role == RaidController.Role.tank)
                 target.health -= damage;
             else
@@ -111,9 +84,7 @@ public class Boss : MonoBehaviour
                 for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
                 {
                     if (raidController.allRaid[i, j].isAlive)
-                    {
                         raidController.allRaid[i, j].health -= aoeDamage;
-                    }
                 }
             }
         }
@@ -127,7 +98,6 @@ public class Boss : MonoBehaviour
             int y = raidController.allRaid.GetLength(1);
             int randomX = 0;
             int randomY = 0;
-            
             do
             {
                 randomX = Random.Range(0, x);
@@ -135,9 +105,7 @@ public class Boss : MonoBehaviour
                 if (raidController.allDead)
                     break;
             } while (raidController.allRaid[randomX, randomY].isAlive == false);
-            
             timeNextDebuff = Time.time + debuff.cooldown;
-
             raidController.allRaid[randomX,randomY].debuffCoroutine = StartCoroutine(debuff.DebuffEffect(randomX, randomY));
         }     
     }
@@ -149,7 +117,6 @@ public class Boss : MonoBehaviour
             int flag = 0;
             int randomI = 0;
             int randomJ = 0;
-
             for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
             {
                 for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
@@ -173,15 +140,9 @@ public class Boss : MonoBehaviour
                     if (raidController.allDead)
                         break;
                 } while ((!raidController.allRaid[randomI, randomJ].isAlive) && (raidController.allRaid[randomI, randomJ] != target));
-
                 target = raidController.allRaid[randomI, randomJ];
             }
-
             timeToChangeTarget = Time.time + changeTargetCooldown;
-        }
-
-
-        
+        }       
     }
-
 }

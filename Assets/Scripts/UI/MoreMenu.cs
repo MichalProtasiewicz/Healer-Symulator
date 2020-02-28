@@ -1,16 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class MoreMenu : MonoBehaviour
 {
-    public GameObject moreMenuPanel;
     public bool isOppened;
+    public GameObject moreMenuPanel;
     public TextMeshProUGUI buttonText;
     public Image buttonImage;
-
 
     private void Start()
     {

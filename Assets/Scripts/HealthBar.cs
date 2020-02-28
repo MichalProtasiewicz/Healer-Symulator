@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    private GameObject bar;
     public float fillAmount;
+    private GameObject bar;
 
     void Start()
     {
@@ -24,5 +22,4 @@ public class HealthBar : MonoBehaviour
         bar = transform.Find("Bar").gameObject;
         bar.transform.localScale = new Vector3(fillAmount, 1f);
     }
-
 }

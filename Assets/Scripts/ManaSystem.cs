@@ -1,32 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ManaSystem : MonoBehaviour
 {
+    public float maxPlayerMana, playerMana, regenMana;
     public HealthBar manabar;
     public Text manaText;
-    public float maxPlayerMana;
-    public float playerMana;
-    public float regenMana;
-
-
 
     void Start()
     {
         playerMana = maxPlayerMana;
-
         manabar = GameObject.Find("ManaBar").GetComponent<HealthBar>();
         UpdateManaBar();
-
         InvokeRepeating("RegenerateMana", 0.0f, 1.0f );
-
         if (PlayerPrefs.HasKey("PlayerManaRegenerate"))
             regenMana = PlayerPrefs.GetFloat("PlayerManaRegenerate");
     }
 
-    // Update is called once per frame
     void Update()
     {
         CheckCorrectMana();
@@ -37,7 +27,6 @@ public class ManaSystem : MonoBehaviour
     {
         if (playerMana < 0)
             playerMana = 0;
-
         if (playerMana > maxPlayerMana)
             playerMana = maxPlayerMana;
     }
@@ -51,9 +40,7 @@ public class ManaSystem : MonoBehaviour
     public void RegenerateMana()
     {
         if (playerMana < maxPlayerMana )
-        {
             playerMana += regenMana;
-        }
     }
 
 }

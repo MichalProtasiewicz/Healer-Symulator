@@ -1,24 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RaidController : MonoBehaviour
 {
-    public RaidMember[,] allRaid;
-
     public int groupsCount = 4;
     public int playersCount = 5;
-
     public bool allDead;
+    public RaidMember[,] allRaid;
     public GameObject gameOverScreen;
-
-    public Sprite spriteTank;
-    public Sprite spriteHeal;
-    public Sprite spriteDps;
-
+    public Sprite spriteTank, spriteHeal, spriteDps;
     public enum Role { tank, healer, dps };
 
-    // Start is called before the first frame update
     void Awake()
     {
         allDead = false;
@@ -35,8 +26,6 @@ public class RaidController : MonoBehaviour
         }
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         CheckAllRaidDeath();

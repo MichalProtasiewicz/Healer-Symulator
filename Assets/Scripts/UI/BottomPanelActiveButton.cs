@@ -10,7 +10,6 @@ public class BottomPanelActiveButton : MonoBehaviour
     void Start()
     {
         TextMeshProUGUI textmeshPro = text.GetComponent<TextMeshProUGUI>();
-
         image.color = new Color32(255, 247, 0, 255);
         textmeshPro.color = new Color32(255, 247, 0, 255);
     }

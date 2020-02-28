@@ -7,30 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class BossInfoPanel : MonoBehaviour
 {
-    public GameObject infoPanel;
-    public TextMeshProUGUI nameText;
-    public GameObject debuff1;
-    public GameObject debuff2;
-    public Image image1;
-    public Image image2;
-    public TextMeshProUGUI debuf1InfoText;
-    public TextMeshProUGUI debuf2InfoText;
-    public GameObject tipText;
-    public GameObject tipButton;
     public string sceneToChangeName = "";
-
+    public GameObject infoPanel, debuff1, debuff2, tipText, tipButton;
+    public TextMeshProUGUI nameText;
+    public Image image1, image2;
+    public TextMeshProUGUI debuf1InfoText, debuf2InfoText;
     public Sprite[] sprites;
-
     private BossInfo opennedBossInfo;
 
     public struct BossInfo
     {
         public int bossId;
-        public string bossName;
-        public string debuf1InfoText;
-        public string debuf2InfoText;
-        public string tipText;
-        public string sceneName;
+        public string bossName, debuf1InfoText, debuf2InfoText, tipText, sceneName;
 
         public BossInfo(int bossId, string bossName, string debuf1InfoText, string debuf2InfoText, string tipText, string sceneName)
         {
@@ -42,7 +30,6 @@ public class BossInfoPanel : MonoBehaviour
             this.sceneName = sceneName;
         }
     }
-
     List<BossInfo> BossesInfo = new List<BossInfo>();
 
     void Awake()
@@ -50,10 +37,8 @@ public class BossInfoPanel : MonoBehaviour
         //Boss id co 2, bo dwie ikony debufu
         BossInfo defaultBoss = new BossInfo(0, "Default Boss", "You need to dispel it.", "", "Heal better, thats all.", "BossScene");
         BossInfo arthas = new BossInfo(2, "Arthas", "Defile on me.", "Dispel it", "Use renew on tanks", "copyBoss");
-        
         BossesInfo.Add(defaultBoss);
         BossesInfo.Add(arthas);
-        
     }
 
     public void OpenBossInfo(int bossId)
@@ -63,7 +48,6 @@ public class BossInfoPanel : MonoBehaviour
             if (bossInfo.bossId == bossId)
             {
                 opennedBossInfo = bossInfo;
-
                 infoPanel.SetActive(true);
                 nameText.text = bossInfo.bossName;
                 tipText.GetComponent<TextMeshProUGUI>().text = bossInfo.tipText;

@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class TalentController : MonoBehaviour
 {
     public int talentId;
+    public string unlockAtlvl;
     public bool isActive;
     public Image borderImage;
     public Button button;
-    public string unlockAtlvl;
 
     void Start()
     {
@@ -29,11 +27,8 @@ public class TalentController : MonoBehaviour
     
     public virtual void TalentFunction()
     {
-
     }
     public virtual void DeactivateTalentFunction()
     {
-
     }
-
 }
