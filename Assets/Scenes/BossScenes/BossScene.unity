@@ -188,16 +188,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 7707521}
   borderIndicator: {fileID: 1188640893}
   renewIndicator: {fileID: 1462862060}
   healthText: {fileID: 1120928928}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1479204127}
   pomIndicator: {fileID: 2113970347}
   pomStacksText: {fileID: 65605754}
@@ -525,16 +525,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.5
+  attackSpeed: 0.5
+  attackCooldown: 4
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 47285086}
   borderIndicator: {fileID: 1714721442}
   renewIndicator: {fileID: 381908240}
   healthText: {fileID: 2068053107}
-  isAlive: 0
-  power: 0.5
-  attackSpeed: 0.5
-  attackCooldown: 4
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1953006488}
   pomIndicator: {fileID: 253325439}
   pomStacksText: {fileID: 762370996}
@@ -922,16 +922,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 77281011}
   borderIndicator: {fileID: 2090614701}
   renewIndicator: {fileID: 153761620}
   healthText: {fileID: 725347860}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1813200075}
   pomIndicator: {fileID: 576478488}
   pomStacksText: {fileID: 989712100}
@@ -1280,8 +1280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93fa3398331abd645bb67a8021f12b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1772701227}
   rayLength: 100
+  player: {fileID: 1772701227}
   layerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -3158,11 +3158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c508e08ac533242aa00f0ce444cded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manabar: {fileID: 267459590}
-  manaText: {fileID: 548299841}
   maxPlayerMana: 100
   playerMana: 0
   regenMana: 0.5
+  manabar: {fileID: 267459590}
+  manaText: {fileID: 548299841}
 --- !u!4 &243054540
 Transform:
   m_ObjectHideFlags: 0
@@ -3926,16 +3926,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 316837269}
   borderIndicator: {fileID: 675260627}
   renewIndicator: {fileID: 257276114}
   healthText: {fileID: 1153032537}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 577200080}
   pomIndicator: {fileID: 1201544880}
   pomStacksText: {fileID: 331857025}
@@ -4930,24 +4930,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a64654162ed068428532a049f228e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossName: Patchverek
+  expReward: 35
+  goldReward: 2
   health: 0
   maxHealth: 1000
-  healthBar: {fileID: 1066879653}
-  healthText: {fileID: 196131490}
-  isAlive: 0
-  target: {fileID: 0}
   changeTargetCooldown: 20
-  raidController: {fileID: 936469729}
   damage: 15
   attackCooldown: 3
   aoeDamage: 10
   aoeAttackCooldown: 15
+  isAlive: 0
+  healthBar: {fileID: 1066879653}
+  healthText: {fileID: 196131490}
+  player: {fileID: 1772701227}
+  target: {fileID: 0}
+  raidController: {fileID: 936469729}
   debuff: {fileID: 1817588512}
   victoryScreen: {fileID: 1754162827}
-  bossName: Patchverek
-  expReward: 35
-  goldReward: 2
-  player: {fileID: 1772701227}
 --- !u!4 &414345891
 Transform:
   m_ObjectHideFlags: 0
@@ -8230,16 +8230,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 667532558}
   borderIndicator: {fileID: 1195418306}
   renewIndicator: {fileID: 876524030}
   healthText: {fileID: 358241102}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 176233777}
   pomIndicator: {fileID: 2065836878}
   pomStacksText: {fileID: 1811902054}
@@ -9691,16 +9691,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 768433615}
   borderIndicator: {fileID: 346617114}
   renewIndicator: {fileID: 1289074538}
   healthText: {fileID: 1189261371}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 29096326}
   pomIndicator: {fileID: 1944013823}
   pomStacksText: {fileID: 1808663901}
@@ -9788,16 +9788,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 775911459}
   borderIndicator: {fileID: 1857234376}
   renewIndicator: {fileID: 230147736}
   healthText: {fileID: 1790193200}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1349595428}
   pomIndicator: {fileID: 1783454457}
   pomStacksText: {fileID: 1926026141}
@@ -10889,16 +10889,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 887990704}
   borderIndicator: {fileID: 859720457}
   renewIndicator: {fileID: 1362129209}
   healthText: {fileID: 1917986087}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 115610104}
   pomIndicator: {fileID: 552739039}
   pomStacksText: {fileID: 958402099}
@@ -11235,16 +11235,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 906840937}
   borderIndicator: {fileID: 96336720}
   renewIndicator: {fileID: 130158377}
   healthText: {fileID: 788292991}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 2074436823}
   pomIndicator: {fileID: 231824989}
   pomStacksText: {fileID: 250109732}
@@ -12902,16 +12902,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 200
+  power: 0.1
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1033984758}
   borderIndicator: {fileID: 425191929}
   renewIndicator: {fileID: 1886322555}
   healthText: {fileID: 2080108278}
-  isAlive: 0
-  power: 0.1
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 821634405}
   pomIndicator: {fileID: 1048939315}
   pomStacksText: {fileID: 90803908}
@@ -12999,16 +12999,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1035051577}
   borderIndicator: {fileID: 1741956585}
   renewIndicator: {fileID: 551166947}
   healthText: {fileID: 575585550}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 460438351}
   pomIndicator: {fileID: 1495429282}
   pomStacksText: {fileID: 428040474}
@@ -13096,16 +13096,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1038439348}
   borderIndicator: {fileID: 829914665}
   renewIndicator: {fileID: 1879906603}
   healthText: {fileID: 1532856277}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1752532897}
   pomIndicator: {fileID: 162449744}
   pomStacksText: {fileID: 1497926511}
@@ -14688,16 +14688,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1198843438}
   borderIndicator: {fileID: 2126356997}
   renewIndicator: {fileID: 1630046036}
   healthText: {fileID: 661403788}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 228967179}
   pomIndicator: {fileID: 1103309428}
   pomStacksText: {fileID: 959792535}
@@ -15001,16 +15001,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 200
+  power: 0.1
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1230748781}
   borderIndicator: {fileID: 51822999}
   renewIndicator: {fileID: 357728544}
   healthText: {fileID: 1871776556}
-  isAlive: 0
-  power: 0.1
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 300461128}
   pomIndicator: {fileID: 586231641}
   pomStacksText: {fileID: 1919722151}
@@ -15098,16 +15098,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.5
+  attackSpeed: 0.5
+  attackCooldown: 4
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1244490787}
   borderIndicator: {fileID: 244810023}
   renewIndicator: {fileID: 967737789}
   healthText: {fileID: 2069738802}
-  isAlive: 0
-  power: 0.5
-  attackSpeed: 0.5
-  attackCooldown: 4
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 601144283}
   pomIndicator: {fileID: 1874736940}
   pomStacksText: {fileID: 1291582779}
@@ -15195,16 +15195,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1262185206}
   borderIndicator: {fileID: 1555238112}
   renewIndicator: {fileID: 2111845275}
   healthText: {fileID: 160310913}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1271255979}
   pomIndicator: {fileID: 1751051355}
   pomStacksText: {fileID: 1688200950}
@@ -16172,16 +16172,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.5
+  attackSpeed: 0.5
+  attackCooldown: 4
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1341542787}
   borderIndicator: {fileID: 812046806}
   renewIndicator: {fileID: 173491725}
   healthText: {fileID: 1499473281}
-  isAlive: 0
-  power: 0.5
-  attackSpeed: 0.5
-  attackCooldown: 4
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1081709105}
   pomIndicator: {fileID: 1410495428}
   pomStacksText: {fileID: 802218417}
@@ -19796,6 +19796,7 @@ MonoBehaviour:
   timeNextSpell: 0
   player: {fileID: 1772701227}
   spellImage: {fileID: 1705681929}
+  raidController: {fileID: 936469729}
 --- !u!222 &1705681931
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20307,12 +20308,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1882cc934c41945b7c10137019a2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focus: {fileID: 0}
-  targetSpell: {fileID: 0}
-  mana: {fileID: 243054539}
   spellPower: 10
   timeNextSpell: 0
   isCasting: 0
+  focus: {fileID: 0}
+  targetSpell: {fileID: 0}
+  mana: {fileID: 243054539}
   castbar: {fileID: 146788713}
   castText: {fileID: 1326861485}
   spellSellected: {fileID: 0}
@@ -20474,16 +20475,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1782143162}
   borderIndicator: {fileID: 1935291200}
   renewIndicator: {fileID: 399040662}
   healthText: {fileID: 170445797}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1400113893}
   pomIndicator: {fileID: 994171989}
   pomStacksText: {fileID: 522756482}
@@ -21607,16 +21608,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.4
+  attackSpeed: 0.5
+  attackCooldown: 2
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1822844256}
   borderIndicator: {fileID: 1593281437}
   renewIndicator: {fileID: 1417831177}
   healthText: {fileID: 1270266128}
-  isAlive: 0
-  power: 0.4
-  attackSpeed: 0.5
-  attackCooldown: 2
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 1890259883}
   pomIndicator: {fileID: 746998059}
   pomStacksText: {fileID: 735153212}
@@ -21704,16 +21705,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
+  power: 0.5
+  attackSpeed: 0.5
+  attackCooldown: 4
+  isAlive: 0
+  debuffIsActive: 0
   healthBar: {fileID: 1832810900}
   borderIndicator: {fileID: 1322182910}
   renewIndicator: {fileID: 1632414551}
   healthText: {fileID: 968505149}
-  isAlive: 0
-  power: 0.5
-  attackSpeed: 0.5
-  attackCooldown: 4
   boss: {fileID: 414345890}
-  debuffIsActive: 0
   debuffIndicator: {fileID: 435295499}
   pomIndicator: {fileID: 801531200}
   pomStacksText: {fileID: 1320638120}
@@ -23681,11 +23682,12 @@ MonoBehaviour:
   timeNextSpell: 0
   player: {fileID: 1772701227}
   spellImage: {fileID: 1959426337}
+  stacks: 5
   holyWordSa: {fileID: 1797055167}
   holyWordSe: {fileID: 1705681930}
-  stacks: 5
   raidMember: {fileID: 0}
   raidController: {fileID: 936469729}
+  renew: {fileID: 2071325524}
 --- !u!222 &1959426339
 CanvasRenderer:
   m_ObjectHideFlags: 0
