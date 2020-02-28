@@ -10430,6 +10430,8 @@ MonoBehaviour:
   player: {fileID: 1772701227}
   spellImage: {fileID: 823700675}
   holyWord: {fileID: 1705681930}
+  previousTarget: {fileID: 0}
+  renew: {fileID: 2071325524}
 --- !u!65 &823700674
 BoxCollider:
   m_ObjectHideFlags: 0

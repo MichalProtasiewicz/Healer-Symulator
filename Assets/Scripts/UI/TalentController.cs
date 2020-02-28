@@ -13,7 +13,7 @@ public class TalentController : MonoBehaviour
 
     void Start()
     {
-        if(PlayerPrefs.GetInt("talent" + unlockAtlvl) == talentId)
+        if(PlayerPrefs.GetInt("Talent" + unlockAtlvl) == talentId)
         {
             isActive = true;
         }

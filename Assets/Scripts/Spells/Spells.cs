@@ -56,8 +56,6 @@ public class Spells : MonoBehaviour
 
             timePassed += Time.deltaTime;
 
-            
-
             yield return null;
         }
         spellImage.fillAmount = 1;
