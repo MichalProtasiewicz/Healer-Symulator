@@ -16,6 +16,8 @@ public class PrayerOfMending : Spells
 
     public RaidController raidController;
 
+    public Renew renew;
+
     public override void CastSpell()
     {
         if (player.targetSpell != null && player.targetSpell.isAlive && Time.time > timeNextSpell)
@@ -30,6 +32,11 @@ public class PrayerOfMending : Spells
 
             StartCoroutine(CdVisualize(cooldown));
 
+            if (PlayerPrefs.GetInt("Talent100") == 13)
+            {
+                holyWordSa.Decrease(1);
+                holyWordSe.Decrease(1);
+            }
             holyWordSa.Decrease(2);
             holyWordSe.Decrease(2);
         }
@@ -53,6 +60,9 @@ public class PrayerOfMending : Spells
                 raidMember.health = raidMember.health + (player.spellPower * player.spellSellected.healPower);
                 stacks--;
                 raidMember.pomIndicator.SetActive(false);
+
+                if (PlayerPrefs.GetInt("Talent100") == 15)
+                    Talent15();
 
                 if (stacks == 0)
                 {
@@ -80,6 +90,13 @@ public class PrayerOfMending : Spells
         }
 
         raidMember.pomIndicator.SetActive(false);
+    }
+
+    void Talent15()
+    {
+        int randomX = Random.Range(0, 100);
+        if (randomX > 75)
+            renew.CastSpell();
     }
 
 }

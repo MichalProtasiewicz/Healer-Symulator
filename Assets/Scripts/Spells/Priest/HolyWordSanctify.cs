@@ -90,6 +90,23 @@ public class HolyWordSanctify : Spells
         spellImage.fillAmount = 1;
         spellImage.color = new Color32(255, 255, 255, 255);
 
+        if (PlayerPrefs.GetInt("Talent100") == 14 )
+            Talent14();
+
         yield return null;
+    }
+
+    void Talent14()
+    {
+        for (int i = 0; i < raidController.allRaid.GetLength(0); i++)
+        {
+            for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
+            {
+                if (raidController.allRaid[i, j].isAlive)
+                {
+                    raidController.allRaid[i, j].health += 1.0f;
+                }
+            }
+        }
     }
 }

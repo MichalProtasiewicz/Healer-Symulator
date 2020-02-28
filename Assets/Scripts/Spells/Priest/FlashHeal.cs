@@ -27,6 +27,8 @@ public class FlashHeal : Spells
 
             StartCoroutine(CdVisualize(cooldown));
 
+            if (PlayerPrefs.GetInt("Talent100") == 13)
+                holyWord.Decrease(2);
             holyWord.Decrease(6);
             
 

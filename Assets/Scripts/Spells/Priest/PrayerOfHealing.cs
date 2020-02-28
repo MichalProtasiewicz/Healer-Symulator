@@ -9,17 +9,12 @@ public class PrayerOfHealing : Spells
 
     public HolyWordSanctify holyWord;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.GetInt("Talent80") == 10)
+            costMana -= 0.1f * costMana;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public override void CastSpell()
     {
@@ -46,6 +41,8 @@ public class PrayerOfHealing : Spells
 
             StartCoroutine(CdVisualize(cooldown));
 
+            if (PlayerPrefs.GetInt("Talent100") == 13)
+                holyWord.Decrease(2);
             holyWord.Decrease(6);
 
         }

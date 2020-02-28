@@ -21,6 +21,8 @@ public class Renew : Spells
 
             StartCoroutine(CdVisualize(cooldown));
 
+            if (PlayerPrefs.GetInt("Talent100") == 13)
+                holyWord.Decrease(1);
             holyWord.Decrease(2);
         }
     }

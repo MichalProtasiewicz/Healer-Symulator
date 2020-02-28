@@ -732,7 +732,6 @@ GameObject:
   - component: {fileID: 159442198}
   - component: {fileID: 159442199}
   - component: {fileID: 159442201}
-  - component: {fileID: 159442200}
   m_Layer: 5
   m_Name: Talent1
   m_TagString: Untagged
@@ -815,23 +814,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &159442200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159442197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ef6da87607c3ba4fb5d5f48273b1661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talentId: 1
-  isActive: 0
-  borderImage: {fileID: 44536472}
-  button: {fileID: 159442199}
-  unlockAtlvl: 20
 --- !u!114 &159442201
 MonoBehaviour:
   m_ObjectHideFlags: 0

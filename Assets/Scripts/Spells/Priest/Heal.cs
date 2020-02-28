@@ -27,6 +27,8 @@ public class Heal : Spells
             player.targetSpell.health = player.targetSpell.health + (player.spellPower * player.spellSellected.healPower);
             StartCoroutine(CdVisualize(cooldown));
 
+            if (PlayerPrefs.GetInt("Talent100") == 13)
+                holyWord.Decrease(2);
             holyWord.Decrease(6);
         }
     }
