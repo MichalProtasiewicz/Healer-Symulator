@@ -31,7 +31,7 @@ public class DispelMagic : Spells
                 StartCoroutine(CdVisualize(cooldown));
             }
             if (PlayerPrefs.GetInt("Talent80") == 11)
-                player.targetSpell.health = player.targetSpell.health + 0.5f*(player.spellPower * player.spellSellected.healPower);
+                player.targetSpell.health = player.targetSpell.health + 0.1f*player.spellPower;
         }
     }
 
