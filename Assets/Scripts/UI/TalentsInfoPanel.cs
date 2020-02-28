@@ -43,7 +43,7 @@ public class TalentsInfoPanel : MonoBehaviour
         TalentInfo talent6 = new TalentInfo(6, "Bonus Flash", "Cast Flash Heal have chance to make your next Flash Heal instant");
         TalentInfo talent7 = new TalentInfo(7, "Ressurect", "After Angel you not die.");
         TalentInfo talent8 = new TalentInfo(8, "Angel Bless", "Your angel form takes more time.");
-        TalentInfo talent9 = new TalentInfo(9, "Revive", "You can ressurect first die person in your raid.");
+        TalentInfo talent9 = new TalentInfo(9, "Revive", "Ressurect first die person in your raid.");
         TalentInfo talent10 = new TalentInfo(10, "Prayer of Mana", "Prayer of Healing cost less mana.");
         TalentInfo talent11 = new TalentInfo(11, "Dispel Healing", "Dispel Magic also heal target.");
         TalentInfo talent12 = new TalentInfo(12, "Bless Hymn", "Untill Divine Hymn, Prayer of Mending jump to others members, without lose stacks.");
