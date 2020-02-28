@@ -38,6 +38,8 @@ public class RaidMember : MonoBehaviour
     void Awake()
     {
         isAlive = true;
+        if (PlayerPrefs.GetInt("Talent20") == 3)
+            maxHealth += 0.1f * maxHealth;
         health = maxHealth;
         UpdateRaidBar();
 
