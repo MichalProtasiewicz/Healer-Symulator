@@ -4,12 +4,20 @@ using UnityEngine;
 public class HolyWordSerenity : Spells
 {
     private bool decreased;
+    private bool finishedCooldown;
     private float decreaseTime;
     public RaidController raidController;
 
     void Start()
     {
         decreased = false;
+        finishedCooldown = false;
+    }
+
+    void Update()
+    {
+        if (PlayerPrefs.GetInt("Talent100") == 14 && finishedCooldown)
+            Talent14();
     }
 
     public override void CastSpell()
@@ -51,8 +59,8 @@ public class HolyWordSerenity : Spells
         }
         spellImage.fillAmount = 1;
         spellImage.color = new Color32(255, 255, 255, 255);
-        if (PlayerPrefs.GetInt("Talent100") == 14 )
-            Talent14();
+        if (time == 60)
+            finishedCooldown = true;
         yield return null;
     }
 
@@ -63,12 +71,9 @@ public class HolyWordSerenity : Spells
             for (int j = 0; j < raidController.allRaid.GetLength(1); j++)
             {
                 if (raidController.allRaid[i, j].isAlive)
-                    raidController.allRaid[i, j].health += 1.0f;
+                    raidController.allRaid[i, j].health += player.spellPower * 0.1f;
             }
         }
+        finishedCooldown = false;
     }
-
-
-
-
 }

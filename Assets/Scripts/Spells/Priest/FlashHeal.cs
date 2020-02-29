@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class FlashHeal : Spells
 {
@@ -23,6 +24,24 @@ public class FlashHeal : Spells
                 holyWord.Decrease(2);
             holyWord.Decrease(6);
         }
+    }
+
+    public override IEnumerator CdVisualize(float time)
+    {
+        float progress = 0.0f;
+        float rate = 1.0f / time;
+        float timePassed = Time.deltaTime;
+        spellImage.color = new Color32(188, 188, 188, 255);
+        while (progress <= 1.0)
+        {
+            spellImage.fillAmount = Mathf.Lerp(0, 1, progress);
+            progress += rate * Time.deltaTime;
+            timePassed += Time.deltaTime;
+            yield return null;
+        }
+        spellImage.fillAmount = 1;
+        spellImage.color = new Color32(255, 255, 255, 255);
+        yield return null;
     }
 
     void talent4()
