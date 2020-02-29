@@ -26,7 +26,7 @@ public class Heal : Spells
     void talent4()
     {
         if (previousTarget != null)
-            previousTarget.health = previousTarget.health + 0.25f * (player.spellPower * player.spellSellected.healPower);
+            previousTarget.health = previousTarget.health + 0.25f * (player.spellPower * 1.5f);
         previousTarget = player.targetSpell;
     }
 
