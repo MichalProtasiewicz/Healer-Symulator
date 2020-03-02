@@ -8749,9 +8749,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a64654162ed068428532a049f228e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossName: Patchverek
+  bossName: Goblin
   expReward: 38
-  goldReward: 2
+  goldReward: 1
   health: 0
   maxHealth: 50
   changeTargetCooldown: 0

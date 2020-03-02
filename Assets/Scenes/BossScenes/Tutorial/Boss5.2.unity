@@ -13004,14 +13004,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossName: Murlocs
   expReward: 45
-  goldReward: 2
+  goldReward: 1
   health: 0
-  maxHealth: 100
+  maxHealth: 110
   changeTargetCooldown: 0
-  damage: 10
-  attackCooldown: 2
+  damage: 15
+  attackCooldown: 1
   aoeDamage: 5
-  aoeAttackCooldown: 4
+  aoeAttackCooldown: 5
   isAlive: 0
   healthBar: {fileID: 725898501870200299}
   healthText: {fileID: 725898501666493932}

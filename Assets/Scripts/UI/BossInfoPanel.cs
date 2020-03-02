@@ -46,23 +46,23 @@ public class BossInfoPanel : MonoBehaviour
         BossInfo boss9 = new BossInfo(16, "Murloc King", "", "", "Healers in your group help you heal raid.", "Boss5.3");
 
         ///DEBUFY
-        BossInfo boss10 = new BossInfo(18, "Assasin Troll", "", "", "If you are pro heal and previous challenges was easy, you can try kill true raid boss for pass tutorial.", "Boss6");
-        BossInfo boss11 = new BossInfo(20, "Hunter Troll", "", "", ".......", "Boss6.1");
+        BossInfo boss10 = new BossInfo(18, "Assasin Troll", "Bleed - deal damage over time.", "", "If you are pro heal and previous challenges was easy, you can try kill true raid boss for pass tutorial.", "Boss6");
+        BossInfo boss11 = new BossInfo(20, "Hunter Troll", "Poison - deal damage over time.", "", ".......", "Boss6.1");
         BossInfo boss12 = new BossInfo(22, "Berserker Troll", "", "", ".......", "Boss6.2");
-        BossInfo boss13 = new BossInfo(24, "Vodo Troll", "", "", ".......", "Boss6.3");
-        BossInfo boss14 = new BossInfo(26, "Ranger Troll", "", "", ".......", "Boss6.4");
-        BossInfo boss15 = new BossInfo(28, "King Troll", "", "", ".......", "Boss6.5");
+        BossInfo boss13 = new BossInfo(24, "Vodo Troll", "Dark Bomb - deal huge damage if not dispeled.", "", ".......", "Boss6.3");
+        BossInfo boss14 = new BossInfo(26, "Ranger Troll", "Poison - deal damage over time.", "", ".......", "Boss6.4");
+        BossInfo boss15 = new BossInfo(28, "King Troll", "Endless Power - give awesome buff to stats.", "", ".......", "Boss6.5");
         BossInfo boss16 = new BossInfo(30, "Hunter Gnoll", "", "", ".......", "Boss7");
-        BossInfo boss17 = new BossInfo(32, "Rogue Gnoll", "", "", ".......", "Boss7.1");
-        BossInfo boss18 = new BossInfo(34, "Assasin Gnoll", "", "", ".......", "Boss7.2");
-        BossInfo boss19 = new BossInfo(30, "Kobold", "", "", ".......", "Boss7.3");
+        BossInfo boss17 = new BossInfo(32, "Rogue Gnoll", "Toxic - deal damage over time.", "", ".......", "Boss7.1");
+        BossInfo boss18 = new BossInfo(34, "Assasin Gnoll", "Bleed - deal damage over time.", "", ".......", "Boss7.2");
+        BossInfo boss19 = new BossInfo(30, "Kobold", "CandleFire - deal huge damage if not dispelled.", "", ".......", "Boss7.3");
         BossInfo boss20 = new BossInfo(32, "Skeleton", "", "", ".......", "Boss8");
         BossInfo boss21 = new BossInfo(34, "Zombie", "", "", ".......", "Boss8.1");
         BossInfo boss22 = new BossInfo(36, "Ghost", "", "", ".......", "Boss8.2");
-        BossInfo boss23 = new BossInfo(38, "Abonimation", "", "", ".......", "Boss8.3");
-        BossInfo boss24 = new BossInfo(40, "Vampir", "", "", ".......", "Boss8.4");
-        BossInfo boss25 = new BossInfo(42, "Lich", "", "", ".......", "Boss8.5");
-        BossInfo boss26 = new BossInfo(32, "Nathrezim", "", "", ".......", "Boss9");
+        BossInfo boss23 = new BossInfo(38, "Abonimation", "Plague - deal damage over time.", "", ".......", "Boss8.3");
+        BossInfo boss24 = new BossInfo(40, "Vampir", "Bleed - deal damage over time.", "", ".......", "Boss8.4");
+        BossInfo boss25 = new BossInfo(42, "Lich", "Frozen Tomb - kill target if not dispelled.", "", ".......", "Boss8.5");
+        BossInfo boss26 = new BossInfo(32, "Nathrezim", "Plague - deal damage over time.", "Mind Blast - kill target if not dispelled.", ".......", "Boss9");
 
         BossesInfo.Add(boss1);
         BossesInfo.Add(boss2);

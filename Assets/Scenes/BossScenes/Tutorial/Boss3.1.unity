@@ -8124,14 +8124,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossName: Gnoll
   expReward: 46
-  goldReward: 2
+  goldReward: 1
   health: 0
   maxHealth: 50
   changeTargetCooldown: 0
-  damage: 10
-  attackCooldown: 2
-  aoeDamage: 5
-  aoeAttackCooldown: 4
+  damage: 15
+  attackCooldown: 1
+  aoeDamage: 0
+  aoeAttackCooldown: 0
   isAlive: 0
   healthBar: {fileID: 725898501870200299}
   healthText: {fileID: 725898501666493932}

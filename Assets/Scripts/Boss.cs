@@ -23,6 +23,7 @@ public class Boss : MonoBehaviour
         health = maxHealth;
         UpdateHealthBar();
         FocusTarget();
+        timeNextDebuff = Time.time + debuff.cooldown;
     }
 
     public void BossFunction()

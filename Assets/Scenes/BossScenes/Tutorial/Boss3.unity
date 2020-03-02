@@ -8753,12 +8753,12 @@ MonoBehaviour:
   expReward: 42
   goldReward: 2
   health: 0
-  maxHealth: 50
+  maxHealth: 60
   changeTargetCooldown: 0
   damage: 10
   attackCooldown: 2
-  aoeDamage: 5
-  aoeAttackCooldown: 4
+  aoeDamage: 10
+  aoeAttackCooldown: 10
   isAlive: 0
   healthBar: {fileID: 725898501870200299}
   healthText: {fileID: 725898501666493932}
