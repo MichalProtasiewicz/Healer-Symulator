@@ -1056,7 +1056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8495001, y: 0.69112563}
   m_AnchorMax: {x: 0.8495001, y: 0.69112563}
-  m_AnchoredPosition: {x: 2.4276886, y: -3.418213}
+  m_AnchoredPosition: {x: 2.4276733, y: -3.418213}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &428086576
@@ -1891,7 +1891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84200007, y: 0.68312085}
   m_AnchorMax: {x: 0.84200007, y: 0.68312085}
-  m_AnchoredPosition: {x: 8.427689, y: -4.4315186}
+  m_AnchoredPosition: {x: 8.427673, y: -4.4315186}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747394039
@@ -3988,7 +3988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.84825003, y: 0.6895123}
   m_AnchorMax: {x: 0.84825003, y: 0.6895123}
-  m_AnchoredPosition: {x: 3.4199677, y: 2.9658813}
+  m_AnchoredPosition: {x: 3.419983, y: 2.9658813}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1622246654
@@ -4116,7 +4116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8382501, y: 0.68626106}
   m_AnchorMax: {x: 0.8382501, y: 0.68626106}
-  m_AnchoredPosition: {x: 11.427689, y: 1.5870972}
+  m_AnchoredPosition: {x: 11.427673, y: 1.5870972}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658742531
@@ -5012,7 +5012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.48375002, y: 0.6212496}
   m_AnchorMax: {x: 0.48375002, y: 0.6212496}
-  m_AnchoredPosition: {x: 3.6097164, y: 3.1233597}
+  m_AnchoredPosition: {x: 3.6097164, y: 3.123352}
   m_SizeDelta: {x: 489.04, y: 57.199997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935526665
@@ -12663,9 +12663,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a64654162ed068428532a049f228e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossName: Patchverek
-  expReward: 35
-  goldReward: 2
+  bossName: Wolf
+  expReward: 34
+  goldReward: 1
   health: 0
   maxHealth: 50
   changeTargetCooldown: 0

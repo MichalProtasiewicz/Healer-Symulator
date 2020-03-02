@@ -16583,8 +16583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a64654162ed068428532a049f228e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossName: Patchverek
-  expReward: 35
+  bossName: Nathrezim
+  expReward: 200
   goldReward: 2
   health: 0
   maxHealth: 500

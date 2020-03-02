@@ -8750,7 +8750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossName: Patchverek
-  expReward: 35
+  expReward: 38
   goldReward: 2
   health: 0
   maxHealth: 50
