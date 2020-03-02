@@ -25,7 +25,7 @@ public class Boss : MonoBehaviour
         FocusTarget();
     }
 
-    void Update()
+    public void BossFunction()
     {
         if (isAlive && !raidController.allDead)
         {

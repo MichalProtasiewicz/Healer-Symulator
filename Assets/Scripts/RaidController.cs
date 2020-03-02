@@ -10,8 +10,12 @@ public class RaidController : MonoBehaviour
     public Sprite spriteTank, spriteHeal, spriteDps;
     public enum Role { tank, healer, dps };
 
+    public bool isStarted;
+    public Boss boss;
+
     void Awake()
     {
+        isStarted = false;
         allDead = false;
         int tmp = 1;
         allRaid = new RaidMember[groupsCount, playersCount];
@@ -28,7 +32,11 @@ public class RaidController : MonoBehaviour
 
     void Update()
     {
-        CheckAllRaidDeath();
+        if (isStarted)
+        {
+            CheckAllRaidDeath();
+            boss.BossFunction();
+        }
     }
 
     public void CheckAllRaidDeath()

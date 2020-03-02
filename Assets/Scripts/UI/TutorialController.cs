@@ -5,6 +5,8 @@ public class TutorialController : MonoBehaviour
     public GameObject[] popUps;
     public int popUpIndex = 0;
 
+    public RaidController raidController;
+
     void Update()
     {
         for(int i = 0; i < popUps.Length; i++)
@@ -18,5 +20,10 @@ public class TutorialController : MonoBehaviour
     public void CloseWindow()
     {
         popUpIndex ++;
+    }
+
+    public void StartFight()
+    {
+        raidController.isStarted = true;
     }
 }
