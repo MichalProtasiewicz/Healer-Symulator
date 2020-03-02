@@ -35,8 +35,12 @@ public class Boss : MonoBehaviour
             DealAoeDamage();
             CastDebuff();
             if (!target.isAlive)
+            {
                 timeToChangeTarget = 0;
-            FocusTarget();
+                FocusTarget();
+            }                
+            if(changeTargetCooldown > 0)
+                FocusTarget();
         }
     }
 
