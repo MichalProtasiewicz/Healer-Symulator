@@ -45,24 +45,27 @@ public class RaidMember : MonoBehaviour
 
     void Update()
     {
-        if (isAlive)
+        if (raidController.isStarted)
         {
-            if(health<=0)
+            if (isAlive)
             {
-                health = 0;
-                debuffIndicator.SetActive(false);
-                renewIndicator.SetActive(false);
-                pomIndicator.SetActive(false);
-                isAlive = false;
+                if (health <= 0)
+                {
+                    health = 0;
+                    debuffIndicator.SetActive(false);
+                    renewIndicator.SetActive(false);
+                    pomIndicator.SetActive(false);
+                    isAlive = false;
+                }
+                if (health > maxHealth)
+                    health = maxHealth;
+                UpdateRaidBar();
+                if (role == RaidController.Role.healer)
+                    HealAlly();
+                else
+                    DealDamage();
             }
-            if (health > maxHealth)
-                health = maxHealth;
-            UpdateRaidBar();
-            if(role == RaidController.Role.healer)
-                HealAlly();
-            else
-                DealDamage();
-        }
+        }     
     }
 
     public void UpdateRaidBar()
