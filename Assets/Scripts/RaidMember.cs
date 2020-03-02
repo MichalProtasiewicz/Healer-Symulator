@@ -90,7 +90,7 @@ public class RaidMember : MonoBehaviour
         if (Time.time > timeNextAttack && boss.isAlive)
         {
             timeNextAttack = Time.time + (attackCooldown - attackSpeed);
-            int randomGroup = Random.Range(0, 4);
+            int randomGroup = Random.Range(0, raidController.groupsCount);
             for(int i = 0; i < raidController.playersCount; i++)
             {
                 if(raidController.allRaid[randomGroup, i].isAlive)

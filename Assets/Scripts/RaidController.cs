@@ -2,8 +2,8 @@
 
 public class RaidController : MonoBehaviour
 {
-    public int groupsCount = 4;
-    public int playersCount = 5;
+    public int groupsCount;
+    public int playersCount;
     public bool allDead;
     public RaidMember[,] allRaid;
     public GameObject gameOverScreen;
