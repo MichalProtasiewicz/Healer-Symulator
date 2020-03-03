@@ -6263,10 +6263,58 @@ MonoBehaviour:
   debuf1InfoText: {fileID: 995246465}
   debuf2InfoText: {fileID: 1781282339}
   sprites:
-  - {fileID: 21300000, guid: 9cef6775c61fd3a4da091e8b133fe6f8, type: 3}
   - {fileID: 0}
-  - {fileID: 21300000, guid: 3a313ca098b573741b5263922b18a254, type: 3}
-  - {fileID: 21300000, guid: 0a2906f8d0c37f649a68814b18da2500, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: bab9cc5b51f0b5f4b8c63cac6dd8cd0e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: e38ac9b47c17abc4ab25abd908314c68, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: f9e6b741c60e6b94a98366d9c89e5459, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: e38ac9b47c17abc4ab25abd908314c68, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 502206564eaaf49488798d0fadc86439, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: e38ac9b47c17abc4ab25abd908314c68, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: bab9cc5b51f0b5f4b8c63cac6dd8cd0e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 6d7292a41670c9445979d4f9a8698fe5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 940530858cffdeb4783b7a1669a07690, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: bab9cc5b51f0b5f4b8c63cac6dd8cd0e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 4049013a47408a240ba86c94e81c4d8e, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 940530858cffdeb4783b7a1669a07690, type: 3}
+  - {fileID: 21300000, guid: ef110e054c428e34db8a8ad1ca65f8c0, type: 3}
 --- !u!1 &1345208362
 GameObject:
   m_ObjectHideFlags: 0
