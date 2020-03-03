@@ -3606,7 +3606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 100
-  power: 0.1
+  power: 0.4
   attackSpeed: 0.5
   attackCooldown: 2
   isAlive: 0
@@ -10469,9 +10469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efec69f0e0834043a2c37662174ffdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationEffect: 15
-  timeBetweenTick: 3
-  healthDecrease: 30
+  durationEffect: 5
+  timeBetweenTick: 5
+  healthDecrease: 200
   cooldown: 10
   raidController: {fileID: 725898501731388335}
 --- !u!114 &725898501062720058

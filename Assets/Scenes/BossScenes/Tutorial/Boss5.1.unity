@@ -3606,7 +3606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 100
-  power: 0.1
+  power: 0.4
   attackSpeed: 0.5
   attackCooldown: 2
   isAlive: 0
