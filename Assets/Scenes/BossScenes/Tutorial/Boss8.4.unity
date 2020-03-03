@@ -15491,11 +15491,11 @@ MonoBehaviour:
   goldReward: 2
   health: 0
   maxHealth: 400
-  changeTargetCooldown: 20
-  damage: 15
-  attackCooldown: 3
-  aoeDamage: 10
-  aoeAttackCooldown: 15
+  changeTargetCooldown: 10
+  damage: 100
+  attackCooldown: 11
+  aoeDamage: 1
+  aoeAttackCooldown: 1
   isAlive: 0
   healthBar: {fileID: 1096928148}
   healthText: {fileID: 841377072}

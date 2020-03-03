@@ -18514,8 +18514,8 @@ MonoBehaviour:
   expReward: 115
   goldReward: 2
   health: 0
-  maxHealth: 100
-  changeTargetCooldown: 0
+  maxHealth: 200
+  changeTargetCooldown: 10
   damage: 10
   attackCooldown: 2
   aoeDamage: 3
@@ -20732,8 +20732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
-  power: 0.4
+  maxHealth: 200
+  power: 0.1
   attackSpeed: 0.5
   attackCooldown: 2
   isAlive: 0
@@ -20746,7 +20746,7 @@ MonoBehaviour:
   debuffIndicator: {fileID: 725898501780163115}
   pomIndicator: {fileID: 725898501885846653}
   pomStacksText: {fileID: 725898501418443146}
-  role: 2
+  role: 0
   roleIndicator: {fileID: 725898502029121761}
   raidController: {fileID: 0}
 --- !u!1 &725898501833110970

@@ -27,12 +27,87 @@ EditorBuildSettings:
     path: Assets/Scenes/TalentsScene.unity
     guid: 589031822bf677244990f84b73ac73ae
   - enabled: 1
-    path: Assets/Scenes/BossScenes/copyBoss.unity
-    guid: 2d8e8a6c2b2770b40adc4f7b3cbbe5fb
-  - enabled: 1
     path: Assets/Scenes/SpellbookScene.unity
     guid: 36ecd5a60f5479944bf2f41b51f917ac
   - enabled: 1
     path: Assets/Scenes/AboutScene.unity
     guid: db187def863a0e24a984e42b83043a20
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss1.unity
+    guid: 36b626b7fb753794b9d98184fd27e12a
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss2.unity
+    guid: 06557e26ed1ffcb4aa12a90c8610f47c
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss3.unity
+    guid: 1db91ddc8c6afbe48adf3890ce003d45
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss3.1.unity
+    guid: 990629a0cf76b1f40b6a5835b06970ae
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss4.unity
+    guid: 06aa19ed6d074f846b4638dd5d275c37
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss5.unity
+    guid: 72630e8d0c7e11b4e86f2efe86d8d2e9
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss5.1.unity
+    guid: 8c714227d6c5ba74ba5ee68cbac1f19f
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss5.2.unity
+    guid: 91190e309a5e3f84e8e1c32738eb61dc
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss5.3.unity
+    guid: 1d8d9817fd297a14b828e161255209e2
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.unity
+    guid: 91114f48e66cc334bbb46e9b715dbc8c
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.1.unity
+    guid: 9d0cbd4686adba14989a270b62dda120
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.2.unity
+    guid: 0d3852205ba5f0b4ea86b2e58ea761b7
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.3.unity
+    guid: b3072ff68570d424cad96fd9c39b23d8
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.4.unity
+    guid: 2fca0e7d5ba65ee458adfc236bfb2af9
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss6.5.unity
+    guid: 3810ae9f82a8d044b9f7503b5c424348
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss7.unity
+    guid: 93ad670fda490f54cbb1a6551791b19c
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss7.1.unity
+    guid: 7a0fd1275299a1d4fb2b1dd9e91ac60f
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss7.2.unity
+    guid: 69bcdaa1837720149b9f69f9f5a018fe
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss7.3.unity
+    guid: e4888b286b0bfb94db49b346f6ef26ea
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.unity
+    guid: f5607411c48de81489dd462651c8d1ca
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.1.unity
+    guid: 9d04a689b55ff374da42472ef50c6aac
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.2.unity
+    guid: 59a29df61e5b610499fbe226aa3ce042
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.3.unity
+    guid: c21b002434b054f45a6d020f30495ea2
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.4.unity
+    guid: afc55c7a76c6bff4e8e804081d90475f
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss8.5.unity
+    guid: b53acb730723f8847afe15264c40bc31
+  - enabled: 1
+    path: Assets/Scenes/BossScenes/Tutorial/Boss9.unity
+    guid: e512ae445a7ce0c4c99989d92a6b5d5a
   m_configObjects: {}

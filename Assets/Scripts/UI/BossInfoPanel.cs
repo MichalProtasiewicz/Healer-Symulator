@@ -44,8 +44,6 @@ public class BossInfoPanel : MonoBehaviour
         BossInfo boss7 = new BossInfo(12, "Murlocs", "", "", "Tanks have a lot of stamina and armor, their main aim is keep agro.", "Boss5.1");
         BossInfo boss8 = new BossInfo(14, "Murlocs", "", "", "Healer and Dps get more damage.", "Boss5.2");
         BossInfo boss9 = new BossInfo(16, "Murloc King", "", "", "Healers in your group help you heal raid.", "Boss5.3");
-
-        ///DEBUFY
         BossInfo boss10 = new BossInfo(18, "Assasin Troll", "Bleed - deal damage over time.", "", "If you are pro heal and previous challenges was easy, you can try kill true raid boss for pass tutorial.", "Boss6");
         BossInfo boss11 = new BossInfo(20, "Hunter Troll", "Poison - deal damage over time.", "", ".......", "Boss6.1");
         BossInfo boss12 = new BossInfo(22, "Berserker Troll", "", "", ".......", "Boss6.2");

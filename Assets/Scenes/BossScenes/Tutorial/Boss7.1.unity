@@ -15349,10 +15349,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efec69f0e0834043a2c37662174ffdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationEffect: 0
-  timeBetweenTick: 0
-  healthDecrease: 0
-  cooldown: 0
+  durationEffect: 10
+  timeBetweenTick: 1
+  healthDecrease: 10
+  cooldown: 5
   raidController: {fileID: 725898501731388335}
 --- !u!114 &725898501062720058
 MonoBehaviour:
@@ -17886,8 +17886,8 @@ MonoBehaviour:
   expReward: 120
   goldReward: 2
   health: 0
-  maxHealth: 100
-  changeTargetCooldown: 0
+  maxHealth: 300
+  changeTargetCooldown: 5
   damage: 10
   attackCooldown: 2
   aoeDamage: 3
@@ -20104,8 +20104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
-  power: 0.4
+  maxHealth: 200
+  power: 0.1
   attackSpeed: 0.5
   attackCooldown: 2
   isAlive: 0
@@ -20118,7 +20118,7 @@ MonoBehaviour:
   debuffIndicator: {fileID: 725898501780163115}
   pomIndicator: {fileID: 725898501885846653}
   pomStacksText: {fileID: 725898501418443146}
-  role: 2
+  role: 0
   roleIndicator: {fileID: 725898502029121761}
   raidController: {fileID: 0}
 --- !u!1 &725898501833110970

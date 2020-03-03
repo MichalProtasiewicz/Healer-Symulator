@@ -15488,11 +15488,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossName: Abonimation
   expReward: 150
-  goldReward: 2
+  goldReward: 3
   health: 0
-  maxHealth: 400
-  changeTargetCooldown: 20
-  damage: 15
+  maxHealth: 500
+  changeTargetCooldown: 10
+  damage: 25
   attackCooldown: 3
   aoeDamage: 10
   aoeAttackCooldown: 15
@@ -17955,7 +17955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   durationEffect: 15
   timeBetweenTick: 3
-  healthDecrease: 20
+  healthDecrease: 30
   cooldown: 10
   raidController: {fileID: 1173902426}
 --- !u!4 &1832910824

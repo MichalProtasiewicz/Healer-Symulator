@@ -16002,11 +16002,11 @@ MonoBehaviour:
   expReward: 135
   goldReward: 2
   health: 0
-  maxHealth: 400
+  maxHealth: 250
   changeTargetCooldown: 20
   damage: 15
   attackCooldown: 3
-  aoeDamage: 10
+  aoeDamage: 25
   aoeAttackCooldown: 15
   isAlive: 0
   healthBar: {fileID: 1096928148}
@@ -18580,10 +18580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efec69f0e0834043a2c37662174ffdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationEffect: 15
-  timeBetweenTick: 3
-  healthDecrease: 20
-  cooldown: 10
+  durationEffect: 0
+  timeBetweenTick: 0
+  healthDecrease: 0
+  cooldown: 0
   raidController: {fileID: 1173902426}
 --- !u!4 &1832910824
 Transform:

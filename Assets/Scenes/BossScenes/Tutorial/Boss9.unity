@@ -19208,8 +19208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durationEffect: 15
-  timeBetweenTick: 3
-  healthDecrease: 20
+  timeBetweenTick: 15
+  healthDecrease: 200
   cooldown: 10
   raidController: {fileID: 1173902426}
 --- !u!4 &1832910824
