@@ -8126,9 +8126,9 @@ MonoBehaviour:
   expReward: 46
   goldReward: 1
   health: 0
-  maxHealth: 30
+  maxHealth: 50
   changeTargetCooldown: 0
-  damage: 14
+  damage: 15
   attackCooldown: 1
   aoeDamage: 0
   aoeAttackCooldown: 0

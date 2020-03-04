@@ -8,7 +8,7 @@ public class Debuff : MonoBehaviour
 
     public IEnumerator DebuffEffect(int cordinateX, int cordinateY)
     {
-        float damageCdTimer = timeBetweenTick;
+        float damageCdTimer = 0;
         RaidMember target = raidController.allRaid[cordinateX, cordinateY];
         target.debuffIsActive = true;
         target.debuffIndicator.SetActive(true);

@@ -144,7 +144,7 @@ public class Boss : MonoBehaviour
                     randomJ = Random.Range(0, raidController.allRaid.GetLength(1));
                     if (raidController.allDead)
                         break;
-                } while ((!raidController.allRaid[randomI, randomJ].isAlive) && (raidController.allRaid[randomI, randomJ] != target) && (!raidController.allRaid[randomI, randomJ].debuffIsActive));
+                } while ((!raidController.allRaid[randomI, randomJ].isAlive) && (raidController.allRaid[randomI, randomJ] != target));
                 target = raidController.allRaid[randomI, randomJ];
             }
             timeToChangeTarget = Time.time + changeTargetCooldown;
