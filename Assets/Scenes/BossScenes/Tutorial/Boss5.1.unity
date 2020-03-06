@@ -13002,7 +13002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a64654162ed068428532a049f228e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossName: Murlocs
+  bossName: Murlocs1
   expReward: 45
   goldReward: 1
   health: 0

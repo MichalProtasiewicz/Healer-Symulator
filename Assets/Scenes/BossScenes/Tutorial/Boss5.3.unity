@@ -13009,9 +13009,9 @@ MonoBehaviour:
   maxHealth: 100
   changeTargetCooldown: 0
   damage: 20
-  attackCooldown: 2
-  aoeDamage: 20
-  aoeAttackCooldown: 15
+  attackCooldown: 4
+  aoeDamage: 10
+  aoeAttackCooldown: 5
   isAlive: 0
   healthBar: {fileID: 725898501870200299}
   healthText: {fileID: 725898501666493932}

@@ -17886,11 +17886,11 @@ MonoBehaviour:
   expReward: 120
   goldReward: 2
   health: 0
-  maxHealth: 300
+  maxHealth: 290
   changeTargetCooldown: 5
   damage: 10
   attackCooldown: 2
-  aoeDamage: 3
+  aoeDamage: 2
   aoeAttackCooldown: 5
   isAlive: 0
   healthBar: {fileID: 725898501870200299}

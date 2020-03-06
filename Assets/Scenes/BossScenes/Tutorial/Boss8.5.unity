@@ -17953,9 +17953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efec69f0e0834043a2c37662174ffdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationEffect: 10
-  timeBetweenTick: 10
-  healthDecrease: 200
+  durationEffect: 4
+  timeBetweenTick: 3
+  healthDecrease: 1000
   cooldown: 15
   raidController: {fileID: 1173902426}
 --- !u!4 &1832910824

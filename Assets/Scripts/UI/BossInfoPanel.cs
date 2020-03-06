@@ -53,14 +53,14 @@ public class BossInfoPanel : MonoBehaviour
         BossInfo boss16 = new BossInfo(30, "Hunter Gnoll", "", "", ".......", "Boss7");
         BossInfo boss17 = new BossInfo(32, "Rogue Gnoll", "Toxic - deal damage over time.", "", ".......", "Boss7.1");
         BossInfo boss18 = new BossInfo(34, "Assasin Gnoll", "Bleed - deal damage over time.", "", ".......", "Boss7.2");
-        BossInfo boss19 = new BossInfo(30, "Kobold", "CandleFire - deal huge damage if not dispelled.", "", ".......", "Boss7.3");
-        BossInfo boss20 = new BossInfo(32, "Skeleton", "", "", ".......", "Boss8");
-        BossInfo boss21 = new BossInfo(34, "Zombie", "", "", ".......", "Boss8.1");
-        BossInfo boss22 = new BossInfo(36, "Ghost", "", "", ".......", "Boss8.2");
-        BossInfo boss23 = new BossInfo(38, "Abonimation", "Plague - deal damage over time.", "", ".......", "Boss8.3");
-        BossInfo boss24 = new BossInfo(40, "Vampir", "Bleed - deal damage over time.", "", ".......", "Boss8.4");
-        BossInfo boss25 = new BossInfo(42, "Lich", "Frozen Tomb - kill target if not dispelled.", "", ".......", "Boss8.5");
-        BossInfo boss26 = new BossInfo(32, "Nathrezim", "Plague - deal damage over time.", "Mind Blast - kill target if not dispelled.", ".......", "Boss9");
+        BossInfo boss19 = new BossInfo(36, "Kobold", "CandleFire - deal huge damage if not dispelled.", "", ".......", "Boss7.3");
+        BossInfo boss20 = new BossInfo(38, "Skeleton", "", "", ".......", "Boss8");
+        BossInfo boss21 = new BossInfo(40, "Zombie", "", "", ".......", "Boss8.1");
+        BossInfo boss22 = new BossInfo(42, "Ghost", "", "", ".......", "Boss8.2");
+        BossInfo boss23 = new BossInfo(44, "Abonimation", "Plague - deal damage over time.", "", ".......", "Boss8.3");
+        BossInfo boss24 = new BossInfo(46, "Vampir", "Bleed - deal damage over time.", "", ".......", "Boss8.4");
+        BossInfo boss25 = new BossInfo(48, "Lich", "Frozen Tomb - kill target if not dispelled.", "", ".......", "Boss8.5");
+        BossInfo boss26 = new BossInfo(50, "Nathrezim", "Plague - deal damage over time.", "Mind Blast - kill target if not dispelled.", ".......", "Boss9");
 
         BossesInfo.Add(boss1);
         BossesInfo.Add(boss2);
