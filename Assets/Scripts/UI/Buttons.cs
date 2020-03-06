@@ -8,6 +8,11 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void QuitApp()
     {
         Application.Quit();

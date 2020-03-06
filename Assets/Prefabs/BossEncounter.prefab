@@ -12975,8 +12975,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3330199449304425513}
-        m_MethodName: ChangeScene
-        m_Mode: 5
+        m_MethodName: ResetScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
